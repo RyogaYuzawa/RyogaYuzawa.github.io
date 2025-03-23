@@ -2,6 +2,7 @@
 layout: post
 title: ResNet Quantization and Inference Execution with DPU IP and Vitis AI
 date: 2025-03-23
+author: Ryoga Yuzawa
 categories: [FPGA, VitisHLS, Zybo]
 tags: [VitisHLS, FPGA, Zybo, High-Level Synthesis]
 ---
@@ -307,7 +308,26 @@ model {
 
 For clarity, the quantization formula used is:
 
-![](https://storage.googleapis.com/zenn-user-upload/7797ae43cf95-20240817.png)
+Quantization:
+
+$$
+x_{\text{quant}} = \operatorname{round}\Bigl(\frac{x_{\text{real}}}{s}\Bigr) + z
+$$
+
+Dequantization:
+
+$$
+x_{\text{real}} = (x_{\text{quant}} - z) \times s
+$$
+
+where  
+- <em>x</em><sub>real</sub> is the original real value.  
+- <em>x</em><sub>quant</sub> is the quantized integer value.  
+- <em>s</em> is the scale factor.  
+- <em>z</em> is the zero point.  
+- <em>round(·)</em> denotes the rounding operation.
+
+
 
 **The model is now fully INT8 quantized!**
 
