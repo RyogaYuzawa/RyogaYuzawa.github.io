@@ -1,7 +1,7 @@
 ---
 layout: post
 title: FPGA + Zynq for Graphic Display Circuit
-date: 2025-03-24
+date: 2025-03-23
 categories: [FPGA,Zynq]
 tags: [FPGA, Xilinx, Zynq]
 ---
