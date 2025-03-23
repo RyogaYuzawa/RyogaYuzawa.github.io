@@ -1,0 +1,6 @@
+.embedly-card {
+    max-width: 600px; /* カードの横幅調整（任意） */
+    height: 150px; /* 好みの高さに調整 */
+    overflow: hidden;
+  }
+  

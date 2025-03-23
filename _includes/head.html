@@ -1,0 +1,40 @@
+<!-- _includes/head.html -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ site.description }}">
+    
+    <title>{{ page.title }} | {{ site.title }}</title>
+  
+    <!-- Minima Theme CSS -->
+    <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+  
+    <!-- Prism.js VSCode Dark CSS -->
+    <link rel="stylesheet" href="{{ '/assets/css/prism-vsc-dark-plus.css' | relative_url }}">
+
+    <!-- Prism.js core -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+
+    <!-- Bash language -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-bash.min.js"></script>
+
+    <!-- JSON language -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-json.min.js"></script>
+
+    <!-- Python language -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+
+
+    <!-- Embedly Cards -->
+    <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+
+    <link rel="stylesheet" href="{{ '/assets/css/embedly-custom.css' | relative_url }}">
+
+  
+    <!-- Feed -->
+    {% feed_meta %}
+  
+    {% seo %}
+  
+</head>
+

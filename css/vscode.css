@@ -1,0 +1,25 @@
+.highlighter-rouge .highlight {
+    background-color: #1e1e1e !important;
+    color: #dcdcdc !important;
+    border-radius: 5px;
+    padding: 15px;
+    overflow-x: auto;
+    font-family: 'Source Code Pro', 'Consolas', 'Courier New', monospace;
+    font-size: 14px;
+    opacity: 1 !important;
+}
+
+.highlighter-rouge .highlight pre,
+.highlighter-rouge .highlight code {
+    background-color: transparent !important;
+    color: inherit !important;
+    opacity: 1 !important;
+}
+
+/* RougeのトークンをVSCode風に指定 */
+.highlighter-rouge .highlight .c, .highlighter-rouge .highlight .cm { color: #6a9955 !important; } /* コメント */
+.highlighter-rouge .highlight .k, .highlighter-rouge .highlight .kd { color: #569cd6 !important; } /* キーワード */
+.highlighter-rouge .highlight .s, .highlighter-rouge .highlight .sr { color: #ce9178 !important; } /* 文字列 */
+.highlighter-rouge .highlight .p { color: #dcdcdc !important; } /* 記号 */
+.highlighter-rouge .highlight .nb { color: #9cdcfe !important; } /* 組込み関数 */
+.highlighter-rouge .highlight .mi, .highlighter-rouge .highlight .mf { color: #b5cea8 !important; } /* 数値 */
