@@ -9,7 +9,7 @@ tags: [VitisHLS, FPGA, Zybo, High-Level Synthesis]
 
 ## Introduction
 
-This post continues from the previous one, documenting the practical application of "High-Level Synthesis Applications" from Chapter 11-1 onward in ["FPGA Programming Complete Guide, 2nd Edition"](https://amzn.to/40isQyG).
+This post continues from the previous one, documenting the practical application of "High-Level Synthesis Applications" from Chapter 11-1 onward in ["FPGA Programming Complete Guide, 2nd Edition"](https://www.amazon.co.jp/FPGA%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E5%A4%A7%E5%85%A8-Xilinx%E7%B7%A8-%E7%AC%AC2%E7%89%88-%E5%B0%8F%E6%9E%97-%E5%84%AA/dp/4798063266).
 
 ## Environment
 
