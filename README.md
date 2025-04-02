@@ -1,13 +1,14 @@
-# Personal Blog
-URL：
+# Ryoga Yuzawa's Personal Blog
+
+Welcome to my personal blog hosted on GitHub Pages. You can visit the blog at:
+
 [https://RyogaYuzawa.github.io](https://RyogaYuzawa.github.io)
 
-- Jekyll
-- Ruby
-- GitHub Pages
+This blog covers topics related to:
+- Computer Vision
+- Embedded AI
+- FPGA
+    - Edge AI
+    - Video Application
 
-memo : 
-internal check -> bundle exec jekyll serve --port 4001
-
-本ブログの見解・意見は個人のものであり、所属する組織の見解や意見を代表するものではありません。
-*The contents of this blog do not reflect the views or opinions of any organization with which I am affiliated; they are solely my own.*
+*The views and opinions expressed in this blog are solely those of the author and do not necessarily reflect the official policy or position of any affiliated organization.*
