@@ -39,7 +39,7 @@ kramdown:
     disable : true
 disqus:
     shortname: my_disqus_shortname
-url: my_website_url
+url: "https://ryogayuzawa.github.io"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
