@@ -5,9 +5,9 @@ date: 2025-03-23
 author: Ryoga Yuzawa
 categories: [FPGA, VitisHLS, Zybo]
 tags: [VitisHLS, FPGA, Zybo, High-Level Synthesis]
+image: https://storage.googleapis.com/zenn-user-upload/a28bb25bccb4-20240817.png
 ---
-# Introduction
-
+## Introduction
 This is a memo outlining the basic steps to run a DNN model using Vitis AI and Zynq MPSoC, as I had forgotten many details after a long break. It's easy to forget FPGA-related procedures each time.
 
 Also, it seems that Transformer models are not yet supported by the DPU IP. I prefer not to write HLS, so please support Transformers soon!

@@ -4,3 +4,11 @@
 
 layout: home
 ---
+
+## Welcome to Edge AI Implementation Diary
+
+This blog is a memo for recording the implementation process of embedded AI technology. We share practical content on embedded system development including FPGA, Zynq, Vitis HLS, MIPI, and AI implementation.
+
+---
+
+

@@ -5,6 +5,7 @@ date: 2025-04-02
 author: Ryoga Yuzawa
 categories: [FPGA,MIPI,Video Application]
 tags: [FPGA, Xilinx, Zynq,MIPI]
+image: https://storage.googleapis.com/zenn-user-upload/aee8ff073552-20230402.png
 ---
 
 ## Introduction

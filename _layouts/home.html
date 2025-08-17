@@ -1,0 +1,58 @@
+---
+layout: default
+---
+
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  {{ content }}
+
+  {%- if site.posts.size > 0 -%}
+    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+    <ul class="post-list">
+      {%- for post in site.posts -%}
+      <li class="post-item">
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <h3>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h3>
+        
+        <!-- サムネイル画像と記事の内容 -->
+        <div class="post-preview">
+          {%- if post.image -%}
+            <div class="post-thumbnail">
+              <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="thumbnail-img">
+            </div>
+          {%- endif -%}
+          
+          <div class="post-excerpt">
+            {%- if post.excerpt -%}
+              {{ post.excerpt }}
+            {%- else -%}
+              {%- assign content = post.content | strip_html | truncate: 200, '...' -%}
+              {{ content }}
+            {%- endif -%}
+          </div>
+        </div>
+        
+        <!-- タグ表示 -->
+        {%- if post.tags -%}
+          <div class="post-tags">
+            {%- for tag in post.tags -%}
+              <span class="tag">{{ tag }}</span>
+            {%- endfor -%}
+          </div>
+        {%- endif -%}
+      </li>
+      {%- endfor -%}
+    </ul>
+
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  {%- endif -%}
+
+</div>

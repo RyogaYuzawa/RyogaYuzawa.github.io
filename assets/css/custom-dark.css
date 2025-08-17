@@ -1,0 +1,267 @@
+/* ダークテーマ用のカスタムスタイル */
+body {
+    background-color: #1a1a1a !important;
+    color: #e0e0e0 !important;
+}
+
+/* ヘッダー部分 */
+.site-header {
+    background-color: #2d2d2d !important;
+    border-bottom: 1px solid #404040 !important;
+}
+
+/* ナビゲーション */
+.site-nav .page-link {
+    color: #e0e0e0 !important;
+}
+
+.site-nav .page-link:hover {
+    color: #ffffff !important;
+}
+
+/* メインコンテンツエリア */
+.site-content {
+    background-color: #1a1a1a !important;
+}
+
+/* 投稿のタイトル */
+.post-title {
+    color: #ffffff !important;
+}
+
+/* リンク */
+a {
+    color: #4a9eff !important;
+}
+
+a:hover {
+    color: #6bb6ff !important;
+}
+
+/* コードブロック（既存のスタイルを上書き） */
+.highlighter-rouge .highlight {
+    background-color: #505050 !important;
+    border: 1px solid #606060 !important;
+}
+
+/* インラインコード */
+code {
+    background-color: #505050 !important;
+    color: #e0e0e0 !important;
+    padding: 2px 4px !important;
+    border-radius: 3px !important;
+}
+
+/* コードブロック内のコード */
+.highlighter-rouge .highlight code {
+    background-color: transparent !important;
+    color: inherit !important;
+}
+
+/* プレコードブロック */
+pre {
+    background-color: #505050 !important;
+    border: 1px solid #606060 !important;
+    border-radius: 5px !important;
+}
+
+/* テーブル */
+table {
+    background-color: #2d2d2d !important;
+    color: #e0e0e0 !important;
+}
+
+th, td {
+    border: 1px solid #404040 !important;
+}
+
+/* 引用ブロック */
+blockquote {
+    background-color: #2d2d2d !important;
+    border-left: 4px solid #4a9eff !important;
+    color: #c0c0c0 !important;
+}
+
+/* フッター */
+.site-footer {
+    background-color: #2d2d2d !important;
+    border-top: 1px solid #404040 !important;
+    color: #c0c0c0 !important;
+}
+
+/* ページネーション */
+.pagination {
+    background-color: #2d2d2d !important;
+}
+
+.pagination .page-link {
+    background-color: #2d2d2d !important;
+    border-color: #404040 !important;
+    color: #e0e0e0 !important;
+}
+
+.pagination .page-link:hover {
+    background-color: #404040 !important;
+    color: #ffffff !important;
+}
+
+/* リスト */
+ul, ol {
+    color: #e0e0e0 !important;
+}
+
+/* 見出し */
+h1, h2, h3, h4, h5, h6 {
+    color: #ffffff !important;
+}
+
+/* 水平線 */
+hr {
+    border-color: #404040 !important;
+}
+
+/* タグクラウド */
+.tag-cloud {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #505050 !important;
+    color: #e0e0e0 !important;
+    padding: 5px 12px !important;
+    margin: 3px !important;
+    border-radius: 15px !important;
+    font-size: 14px !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease !important;
+}
+
+.tag:hover {
+    background-color: #4a9eff !important;
+    color: #ffffff !important;
+    transform: translateY(-2px) !important;
+}
+
+/* 技術スタック */
+.tech-stack {
+    background-color: #2d2d2d !important;
+    padding: 20px !important;
+    border-radius: 8px !important;
+    border: 1px solid #404040 !important;
+    margin: 20px 0 !important;
+}
+
+.tech-item {
+    margin: 10px 0 !important;
+    padding: 8px 0 !important;
+    border-bottom: 1px solid #404040 !important;
+}
+
+.tech-item:last-child {
+    border-bottom: none !important;
+}
+
+/* ホームページのセクション区切り */
+.index-section {
+    margin: 30px 0 !important;
+    padding: 20px 0 !important;
+}
+
+/* カテゴリ別記事のリンク */
+.category-links a {
+    color: #4a9eff !important;
+    text-decoration: none !important;
+    display: block !important;
+    padding: 8px 0 !important;
+    border-left: 3px solid transparent !important;
+    padding-left: 15px !important;
+    transition: all 0.3s ease !important;
+}
+
+.category-links a:hover {
+    color: #6bb6ff !important;
+    border-left-color: #4a9eff !important;
+    background-color: #2d2d2d !important;
+    padding-left: 20px !important;
+}
+
+/* 投稿一覧のスタイル */
+.post-item {
+    background-color: #2d2d2d !important;
+    border: 1px solid #404040 !important;
+    border-radius: 8px !important;
+    padding: 20px !important;
+    margin-bottom: 20px !important;
+    transition: all 0.3s ease !important;
+}
+
+.post-item:hover {
+    border-color: #4a9eff !important;
+    box-shadow: 0 4px 12px rgba(74, 158, 255, 0.2) !important;
+}
+
+.post-preview {
+    display: flex !important;
+    gap: 20px !important;
+    margin: 15px 0 !important;
+    align-items: flex-start !important;
+}
+
+.post-thumbnail {
+    flex-shrink: 0 !important;
+}
+
+.thumbnail-img {
+    width: 120px !important;
+    height: 80px !important;
+    object-fit: cover !important;
+    border-radius: 6px !important;
+    border: 1px solid #404040 !important;
+}
+
+.post-excerpt {
+    flex: 1 !important;
+    color: #c0c0c0 !important;
+    line-height: 1.6 !important;
+    font-size: 14px !important;
+}
+
+.post-tags {
+    margin-top: 15px !important;
+}
+
+.post-tags .tag {
+    background-color: #505050 !important;
+    color: #e0e0e0 !important;
+    padding: 4px 8px !important;
+    margin-right: 8px !important;
+    border-radius: 12px !important;
+    font-size: 12px !important;
+    display: inline-block !important;
+}
+
+.post-tags .tag:hover {
+    background-color: #4a9eff !important;
+    color: #ffffff !important;
+}
+
+/* 投稿メタ情報 */
+.post-meta {
+    color: #888 !important;
+    font-size: 14px !important;
+    margin-bottom: 8px !important;
+    display: block !important;
+}
+
+.post-link {
+    color: #ffffff !important;
+    text-decoration: none !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+}
+
+.post-link:hover {
+    color: #4a9eff !important;
+}

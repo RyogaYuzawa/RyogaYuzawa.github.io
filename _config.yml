@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Embedded memo blog
+title: Edge AI Implementation Diary
 # email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   The views and opinions expressed in this blog are solely personal and do not represent the positions or opinions of any affiliated organization.
