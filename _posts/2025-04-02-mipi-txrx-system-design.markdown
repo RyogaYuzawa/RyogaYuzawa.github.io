@@ -6,6 +6,8 @@ author: Ryoga Yuzawa
 categories: [FPGA,MIPI,Video Application]
 tags: [FPGA, Xilinx, Zynq,MIPI]
 image: https://storage.googleapis.com/zenn-user-upload/aee8ff073552-20230402.png
+description: "Learn how to implement MIPI CSI-2 Rx and DSI Tx subsystems on Xilinx Zynq FPGA. Complete guide with Vivado IP design and Vitis implementation."
+keywords: "MIPI, CSI-2, DSI, FPGA, Zynq, Xilinx, Vivado, Vitis, Video Processing"
 ---
 
 ## Introduction

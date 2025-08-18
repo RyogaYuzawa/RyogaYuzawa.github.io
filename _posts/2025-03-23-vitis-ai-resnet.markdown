@@ -6,6 +6,8 @@ author: Ryoga Yuzawa
 categories: [FPGA, VitisHLS, Zybo]
 tags: [VitisHLS, FPGA, Zybo, High-Level Synthesis]
 image: https://storage.googleapis.com/zenn-user-upload/a28bb25bccb4-20240817.png
+description: "Complete guide to ResNet quantization and inference on Xilinx DPU IP using Vitis AI. Step-by-step tutorial for AI model deployment on FPGA."
+keywords: "Vitis AI, ResNet, DPU IP, FPGA, AI Quantization, Model Inference, Zynq MPSoC, KV260"
 ---
 ## Introduction
 This is a memo outlining the basic steps to run a DNN model using Vitis AI and Zynq MPSoC, as I had forgotten many details after a long break. It's easy to forget FPGA-related procedures each time.

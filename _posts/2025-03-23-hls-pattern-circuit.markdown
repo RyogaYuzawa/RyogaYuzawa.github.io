@@ -6,6 +6,8 @@ author: Ryoga Yuzawa
 categories: [FPGA, VitisHLS, Zybo]
 tags: [VitisHLS, FPGA, Zybo, High-Level Synthesis]
 image: https://storage.googleapis.com/zenn-user-upload/ac8ac837b60f-20230426.png
+description: "Learn how to create pattern display circuits using Vitis HLS high-level synthesis. Complete guide with C-RTL cosimulation and waveform analysis."
+keywords: "Vitis HLS, High-Level Synthesis, FPGA, Pattern Display, C-RTL Cosimulation, Waveform Analysis"
 ---
 
 ## Introduction

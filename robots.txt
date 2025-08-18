@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://ryogayuzawa.github.io/sitemap.xml
+
+# Allow all pages and posts
+Allow: /_posts/
+Allow: /_pages/
+Allow: /about/
+Allow: /404.html
+
+# Disallow admin and cache directories
+Disallow: /_site/
+Disallow: /.jekyll-cache/
+Disallow: /.git/
+Disallow: /Gemfile*
+Disallow: /vendor/

@@ -39,7 +39,25 @@ kramdown:
     disable : true
 disqus:
     shortname: my_disqus_shortname
+
+# URL settings
 url: "https://ryogayuzawa.github.io"
+
+# Sitemap settings
+sitemap:
+  exclude:
+    - /404.html
+    - /robots.txt
+    - /sitemap.xml
+  include:
+    - /_posts/
+    - /_pages/
+  changefreq: weekly
+  priority: 0.8
+
+# SEO settings
+keywords: "FPGA, Zynq, Vitis HLS, MIPI, AI, Embedded Systems, Xilinx"
+author: "Ryoga Yuzawa"
 
 # Exclude from processing.
 # The following items will not be processed, by default.

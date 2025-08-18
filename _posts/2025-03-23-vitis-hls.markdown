@@ -6,6 +6,8 @@ author: Ryoga Yuzawa
 categories: [FPGA,Zynq]
 tags: [FPGA, Xilinx, Zynq]
 image: https://storage.googleapis.com/zenn-user-upload/359b234b40d0-20230505.png
+description: "Complete guide to creating HDMI graphic display IP using Vivado and Vitis HLS. Learn AXI bus control and VGA timing for FPGA graphics."
+keywords: "FPGA, Zynq, Vivado, Vitis HLS, HDMI, VGA, AXI Bus, Graphics, IP Design"
 ---
 
 ## Introduction
