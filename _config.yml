@@ -23,7 +23,6 @@ title: Edge AI Implementation Diary
 description: >- # this means to ignore newlines until "baseurl:"
   The views and opinions expressed in this blog are solely personal and do not represent the positions or opinions of any affiliated organization.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 github_username:  RyogaYuzawa
 linkedin_username: ryoga-yuzawa
