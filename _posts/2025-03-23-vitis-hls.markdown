@@ -5,7 +5,7 @@ date: 2025-03-23
 author: Ryoga Yuzawa
 categories: [FPGA,Zynq]
 tags: [FPGA, Xilinx, Zynq]
-image: https://storage.googleapis.com/zenn-user-upload/7c9ed12e7a4a-20230505.png
+image: https://storage.googleapis.com/zenn-user-upload/359b234b40d0-20230505.png
 ---
 
 ## Introduction
