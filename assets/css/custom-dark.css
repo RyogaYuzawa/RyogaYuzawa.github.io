@@ -252,7 +252,19 @@ hr {
     color: #888 !important;
     font-size: 14px !important;
     margin-bottom: 8px !important;
-    display: block !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 15px !important;
+}
+
+.post-date {
+    color: #888 !important;
+}
+
+.post-author {
+    color: #888 !important;
+    font-weight: 500 !important;
+    margin-left: auto !important;
 }
 
 .post-link {
@@ -264,4 +276,14 @@ hr {
 
 .post-link:hover {
     color: #4a9eff !important;
+}
+
+/* Welcome タイトルのスタイル */
+.welcome-title {
+    font-size: 28px !important;
+    font-weight: 600 !important;
+    color: #ffffff !important;
+    margin: 20px 0 15px 0 !important;
+    text-align: center !important;
+    letter-spacing: 0.5px !important;
 }
