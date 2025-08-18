@@ -42,17 +42,27 @@ disqus:
 # URL settings
 url: "https://ryogayuzawa.github.io"
 
+# Permalink structure - シンプルな構造に変更
+permalink: /:title/
+
 # Sitemap settings
 sitemap:
   exclude:
     - /404.html
     - /robots.txt
     - /sitemap.xml
+    - /_site/
+    - /.jekyll-cache/
+    - /.git/
+    - /Gemfile*
+    - /vendor/
   include:
     - /_posts/
     - /_pages/
+    - /about/
   changefreq: weekly
   priority: 0.8
+  lastmod: true
 
 # SEO settings
 keywords: "FPGA, Zynq, Vitis HLS, MIPI, AI, Embedded Systems, Xilinx"

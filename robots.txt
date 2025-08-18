@@ -16,3 +16,6 @@ Disallow: /.jekyll-cache/
 Disallow: /.git/
 Disallow: /Gemfile*
 Disallow: /vendor/
+
+# Crawl delay (optional)
+Crawl-delay: 1
