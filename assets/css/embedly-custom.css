@@ -10,3 +10,69 @@
   max-width: 100%; /* embedly-card内で幅を制限 */
   height: auto;    /* アスペクト比を維持 */
 }
+
+/* Prism.jsのシンタックスハイライトによる四角い枠を削除 */
+.token {
+  background: none !important;
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* より強力なルールで四角い枠を削除 */
+.token.variable,
+.token.function,
+.token.property,
+.token.tag,
+.token.attr-name,
+.token.attr-value,
+.token.string,
+.token.number,
+.token.boolean,
+.token.null,
+.token.operator,
+.token.punctuation,
+.token.comment,
+.token.keyword,
+.token.class-name,
+.token.selector,
+.token.important,
+.token.builtin,
+.token.constant,
+.token.symbol,
+.token.deleted,
+.token.inserted,
+.token.italic,
+.token.bold,
+.token.url,
+.token.entity,
+.token.atrule,
+.token.regex,
+.token.important,
+.token.variable,
+.token.function,
+.token.selector,
+.token.attr-selector,
+.token.pseudo-class,
+.token.pseudo-element {
+  background: none !important;
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+
+/* インラインコードの四角い枠も削除 */
+code {
+  background: none !important;
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* インラインコードのみイタリック（pre内のコードは除外） */
+:not(pre) > code {
+  font-style: italic;
+  color: #87CEEB !important; /* 水色 */
+}
