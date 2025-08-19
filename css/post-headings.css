@@ -1,0 +1,146 @@
+/* 記事内の見出しの階層に応じたインデント設定 */
+
+/* 大見出し（h2）は左端から開始 */
+.post-content h2 {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+/* 中見出し（h3）は少しインデント */
+.post-content h3 {
+    margin-left: 1.5rem;
+    padding-left: 0.5rem;
+    border-left: 3px solid #e1e4e8;
+}
+
+/* 小見出し（h4）はさらにインデント */
+.post-content h4 {
+    margin-left: 3rem;
+    padding-left: 1rem;
+    border-left: 2px solid #d1d5da;
+}
+
+/* 最小見出し（h5）は最大インデント */
+.post-content h5 {
+    margin-left: 4.5rem;
+    padding-left: 1.5rem;
+    border-left: 1px solid #c1c5ca;
+}
+
+/* 最小見出し（h6）は最大インデント */
+.post-content h6 {
+    margin-left: 6rem;
+    padding-left: 2rem;
+    border-left: 1px solid #b1b5ba;
+}
+
+/* 見出しの下のコンテンツも適切にインデント */
+.post-content h3 + *,
+.post-content h3 + * + *,
+.post-content h3 + * + * + *,
+.post-content h3 + * + * + * + *,
+.post-content h3 + * + * + * + * + * {
+    margin-left: 1.5rem;
+}
+
+.post-content h4 + *,
+.post-content h4 + * + *,
+.post-content h4 + * + * + *,
+.post-content h4 + * + * + * + *,
+.post-content h4 + * + * + * + * + * {
+    margin-left: 3rem;
+}
+
+.post-content h5 + *,
+.post-content h5 + * + *,
+.post-content h5 + * + * + *,
+.post-content h5 + * + * + * + *,
+.post-content h5 + * + * + * + * + * {
+    margin-left: 4.5rem;
+}
+
+.post-content h6 + *,
+.post-content h6 + * + *,
+.post-content h6 + * + * + *,
+.post-content h6 + * + * + * + *,
+.post-content h6 + * + * + * + * + * {
+    margin-left: 6rem;
+}
+
+/* 次の見出しが現れるまでインデントを継続 */
+.post-content h3 ~ *:not(h2):not(h3):not(h4):not(h5):not(h6) {
+    margin-left: 1.5rem;
+}
+
+.post-content h4 ~ *:not(h2):not(h3):not(h4):not(h5):not(h6) {
+    margin-left: 3rem;
+}
+
+.post-content h5 ~ *:not(h2):not(h3):not(h4):not(h5):not(h6) {
+    margin-left: 4.5rem;
+}
+
+.post-content h6 ~ *:not(h2):not(h3):not(h4):not(h5):not(h6) {
+    margin-left: 6rem;
+}
+
+/* リストやコードブロックも適切にインデント */
+.post-content h3 ~ ul,
+.post-content h3 ~ ol,
+.post-content h3 ~ pre,
+.post-content h3 ~ code {
+    margin-left: 1.5rem;
+}
+
+.post-content h4 ~ ul,
+.post-content h4 ~ ol,
+.post-content h4 ~ pre,
+.post-content h4 ~ code {
+    margin-left: 3rem;
+}
+
+.post-content h5 ~ ul,
+.post-content h5 ~ ol,
+.post-content h5 ~ pre,
+.post-content h5 ~ code {
+    margin-left: 4.5rem;
+}
+
+.post-content h6 ~ ul,
+.post-content h6 ~ ol,
+.post-content h6 ~ pre,
+.post-content h6 ~ code {
+    margin-left: 6rem;
+}
+
+/* 見出しのスタイリング */
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+    color: #24292e;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    line-height: 1.25;
+}
+
+.post-content h2 {
+    font-size: 1.5rem;
+    border-bottom: 1px solid #eaecef;
+    padding-bottom: 0.3rem;
+}
+
+.post-content h3 {
+    font-size: 1.25rem;
+}
+
+.post-content h4 {
+    font-size: 1.1rem;
+}
+
+.post-content h5,
+.post-content h6 {
+    font-size: 1rem;
+}
