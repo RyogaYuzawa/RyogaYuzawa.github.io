@@ -77,6 +77,9 @@ git clone https://github.com/facebookresearch/sam2
 ### 2. セットアップ
 - あとは公式のリポジトリに従ってcheckpointなどインストール
 - Jetsonだとlarge系はメモリが怪しいので軽量モデルに変更
+- もしかしたら動画ロード時にOOMになってKernelクラッシュするので、その際はメモリ最適化を行う
+   - ここの手順にそって進めればOK
+      https://bone.jp/articles/2025/250125_JetsonOrinNanoSuper_4_memory
 
 **軽量モデルの設定**:
 ```python
