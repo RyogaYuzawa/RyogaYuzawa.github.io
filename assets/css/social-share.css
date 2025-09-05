@@ -1,0 +1,195 @@
+/* Social Share Buttons Styles */
+.social-share {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  border-top: 1px solid #e0e0e0;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.social-share h4 {
+  margin: 0 0 1rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.share-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.share-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: white !important;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  min-width: 80px;
+  justify-content: center;
+}
+
+.share-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  text-decoration: none;
+  color: white !important;
+}
+
+.share-btn:visited {
+  color: white !important;
+}
+
+.share-btn:active {
+  color: white !important;
+}
+
+.share-btn svg {
+  flex-shrink: 0;
+}
+
+/* Platform-specific colors */
+.share-btn.twitter {
+  background-color: #1da1f2;
+  color: white !important;
+}
+
+.share-btn.twitter:hover {
+  background-color: #1991db;
+  color: white !important;
+}
+
+.share-btn.linkedin {
+  background-color: #0077b5;
+  color: white !important;
+}
+
+.share-btn.linkedin:hover {
+  background-color: #006399;
+  color: white !important;
+}
+
+.share-btn.facebook {
+  background-color: #1877f2;
+  color: white !important;
+}
+
+.share-btn.facebook:hover {
+  background-color: #166fe5;
+  color: white !important;
+}
+
+.share-btn.hatena {
+  background-color: #00a4de;
+  color: white !important;
+}
+
+.share-btn.hatena:hover {
+  background-color: #0088cc;
+  color: white !important;
+}
+
+.share-btn.copy-url {
+  background-color: #6c757d;
+  color: white !important;
+}
+
+.share-btn.copy-url:hover {
+  background-color: #5a6268;
+  color: white !important;
+}
+
+/* Dark theme adjustments */
+@media (prefers-color-scheme: dark) {
+  .social-share {
+    background-color: #1a1a1a;
+    border-top-color: #444;
+  }
+  
+  .social-share h4 {
+    color: #ffffff;
+  }
+  
+  /* Brighter colors for dark theme */
+  .share-btn.twitter {
+    background-color: #1da1f2;
+    color: #ffffff;
+  }
+  
+  .share-btn.twitter:hover {
+    background-color: #4ab3f4;
+    color: #ffffff;
+  }
+  
+  .share-btn.linkedin {
+    background-color: #0e76a8;
+    color: #ffffff;
+  }
+  
+  .share-btn.linkedin:hover {
+    background-color: #1a85bc;
+    color: #ffffff;
+  }
+  
+  .share-btn.facebook {
+    background-color: #1877f2;
+    color: #ffffff;
+  }
+  
+  .share-btn.facebook:hover {
+    background-color: #4267b2;
+    color: #ffffff;
+  }
+  
+  .share-btn.hatena {
+    background-color: #00a4de;
+    color: #ffffff;
+  }
+  
+  .share-btn.hatena:hover {
+    background-color: #33b5e5;
+    color: #ffffff;
+  }
+  
+  .share-btn.copy-url {
+    background-color: #868e96;
+    color: #ffffff !important;
+  }
+  
+  .share-btn.copy-url:hover {
+    background-color: #adb5bd;
+    color: #ffffff !important;
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .share-buttons {
+    flex-direction: column;
+  }
+  
+  .share-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .social-share {
+    margin: 1rem -1rem;
+    border-radius: 0;
+  }
+  
+  .share-btn {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+  }
+}

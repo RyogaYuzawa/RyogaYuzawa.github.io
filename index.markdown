@@ -5,5 +5,5 @@
 layout: home
 ---
 
-<h1 class="welcome-title">Welcome to Edge AI Implementation Diary</h1>
+<h1 class="welcome-title">Welcome to Edge AI Implementation Memo</h1>
 This blog is a memo for recording the implementation process of embedded AI technology. We share practical content on embedded system development including AI implementation, video application.
