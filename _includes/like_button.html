@@ -1,0 +1,10 @@
+<!-- Like Button Component -->
+<div class="like-button-container">
+  <button class="like-button" 
+          data-post-id="{{ page.slug | default: page.title | slugify }}"
+          onclick="toggleLike(this)"
+          title="Like this post">
+    <span class="heart-icon">♡</span>
+    <span class="like-count">0</span>
+  </button>
+</div>

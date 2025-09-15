@@ -32,6 +32,12 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+
+# Header navigation
+header_pages:
+  - posts.md
+  - about.markdown
+
 markdown: kramdown
 kramdown:
   syntax_highlighter_opts:
