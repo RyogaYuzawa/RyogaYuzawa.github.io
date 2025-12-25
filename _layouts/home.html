@@ -23,22 +23,11 @@ layout: default
           </h3>
         </div>
         
-        <div class="post-meta-like-container">
-          <div class="post-meta">
-            <span class="post-date">{{ post.date | date: date_format }}</span>
-            {%- if post.author -%}
-              <span class="post-author">Author: {{ post.author }}</span>
-            {%- endif -%}
-          </div>
-          <div class="like-button-container">
-            <button class="like-button" 
-                    data-post-id="{{ post.slug | default: post.title | slugify }}"
-                    onclick="toggleLike(this)"
-                    title="Like this post">
-              <span class="heart-icon">♡</span>
-              <span class="like-count">0</span>
-            </button>
-          </div>
+        <div class="post-meta">
+          <span class="post-date">{{ post.date | date: date_format }}</span>
+          {%- if post.author -%}
+            <span class="post-author">Author: {{ post.author }}</span>
+          {%- endif -%}
         </div>
         
         <!-- サムネイル画像と記事の内容 -->

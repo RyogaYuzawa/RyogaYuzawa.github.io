@@ -1,21 +1,21 @@
 ---
 layout: post
-title: SAM2 Video Segmentation inference on Jetson Orin Nano 
+title: SAM2 Video Segmentation Inference on Jetson Orin Nano 
 date: 2025-08-24
 author: Ryoga Yuzawa
 categories: [AI, Computer Vision, Jetson, Docker, SAM2]
 tags: [Jetson Orin Nano, SAM2, Docker, VSCode, Computer Vision, AI, Environment Setup]
 image: /assets/images/sam2-video-predictor.png
-description: "Jetson Orin Nano SuperでSAM2（Segment Anything Model 2）の環境を構築し、DockerコンテナとVSCodeを連携させて効率的な開発環境を作る方法を解説します。"
+description: "A guide to setting up SAM2 (Segment Anything Model 2) on Jetson Orin Nano Super, creating an efficient development environment with Docker containers and VSCode integration."
 keywords: "Jetson Orin Nano, SAM2, Docker, VSCode, Computer Vision, AI, Environment Setup, Jetson"
 ---
 
-## はじめに
-Jetson Orin Nano上でSAM2 動画推論を動かしたときのメモ
+## Introduction
+Notes on running SAM2 video inference on Jetson Orin Nano
 
-## 環境仕様
+## Environment Specifications
 
-### ハードウェア・ソフトウェア構成
+### Hardware and Software Configuration
 - **Board**: Jetson Orin Nano Super
 - **FW**: Jetpack 6.2
 - **OS**: Ubuntu 22.04
@@ -23,144 +23,144 @@ Jetson Orin Nano上でSAM2 動画推論を動かしたときのメモ
 - **cuDNN**: 12.6
 - **Python**: 3.10
 
-## Jetson向けPyTorch+Transformer環境コンテナ作成
+## Creating PyTorch+Transformer Container for Jetson
 
-### 1. 基本セットアップ
+### 1. Basic Setup
 ```bash
 git clone https://github.com/dusty-nv/jetson-containers.git
 bash jetson-containers/install.sh
 CUDA_VERSION=12.6 jetson-containers build l4t-ml transformers
 ```
 
-- l4t-ml (pytorch+etc) + transformers環境を作る
+- Create l4t-ml (pytorch+etc) + transformers environment
 
-### 2. NCCLビルド時のメモリ不足対策
-NCCLビルド時にOut of memoryで落ちてしまった場合の対処法：
+### 2. Handling Memory Issues During NCCL Build
+Solution for Out of Memory errors during NCCL build:
 
-**対象ファイル**: `packages/cuda/nccl/build.sh`
+**Target File**: `packages/cuda/nccl/build.sh`
 
-**修正内容**:
+**Modification**:
 
 ```bash
 make -j2 src.build NVCC_GENCODE="-gencode=arch=compute_87,code=sm_87"
 make -j2 pkg.txz.build NVCC_GENCODE="-gencode=arch=compute_87,code=sm_87"
 ```
 
-- job数を2に制限することで、メモリ使用量を抑制
-- ビルドには約8時間を要する
+- Limit job count to 2 to reduce memory usage
+- Build takes approximately 8 hours
 
-### 3. コンテナの起動と確認
+### 3. Starting and Verifying the Container
 
 ```bash
 jetson-containers run --volume /ssd/work:/work --workdir /work $(autotag l4t-ptx-transformers)
 ```
 
-- 自分は上記イメージをl4t-ptx-transformersとして作った
+- I created the above image as l4t-ptx-transformers
 
-**環境確認**:
+**Environment Verification**:
 ```bash
 pip list
 ```
 
-- 一通りpytorchやtransformerなど入っていればビルドOK
-- `nvidia-smi`などして出てくればOK, JetsonはSoCとしてGPUがあるのでN/Aとなる
-- 途中でfailしている場合もコンテナ内に入れてしまうので、その場合は各種ライブラリが無い
+- If PyTorch, transformers, etc. are installed, the build is successful
+- If `nvidia-smi` works, it's OK. Jetson has GPU as SoC, so it shows N/A
+- You can enter the container even if it failed during build, in which case libraries will be missing
 
-## SAM2 Install
+## SAM2 Installation
 
-### 1. リポジトリのクローン
+### 1. Clone Repository
 ```bash
 jetson-containers run --volume /ssd/work:/work --workdir /work $(autotag l4t-ptx-transformers)
 git clone https://github.com/facebookresearch/sam2
 ```
 
-### 2. セットアップ
-- あとは公式のリポジトリに従ってcheckpointなどインストール
-- Jetsonだとlarge系はメモリが怪しいので軽量モデルに変更
-- もしかしたら動画ロード時にOOMになってKernelクラッシュするので、その際はメモリ最適化を行う
-   - ここの手順にそって進めればOK
+### 2. Setup
+- Follow the official repository to install checkpoints, etc.
+- For Jetson, large models may have memory issues, so use lightweight models
+- If OOM occurs during video loading causing kernel crash, optimize memory
+   - Follow the steps here:
       https://bone.jp/articles/2025/250125_JetsonOrinNanoSuper_4_memory
 
-**軽量モデルの設定**:
+**Lightweight Model Configuration**:
 ```python
 sam2_checkpoint = "../checkpoints/sam2.1_hiera_tiny.pt"
 model_cfg = "configs/sam2.1/sam2.1_hiera_t.yaml"
 ```
 
-## Docker環境でのipynb実行
+## Running ipynb in Docker Environment
 
-VSCodeで実行していく。前提条件としてDev Container, Docker, JupyterのExtensionが必要
+Use VSCode. Prerequisites: Dev Container, Docker, and Jupyter extensions
 
-### 1. Jupyter環境のセットアップ
+### 1. Jupyter Environment Setup
 ```bash
 jetson-containers run --volume /ssd/work:/work --workdir /work $(autotag l4t-ptx-transformers)
 pip install jupyterlab ipykernel
 python -m ipykernel install --user --name jetson-docker
 ```
 
-### 2. VSCodeでのコンテナ接続
+### 2. Connecting to Container in VSCode
 1. `Ctrl + Shift + P` → `Dev Containers: Attach to Running Container`
-2. 今動いているl4t-ptx-transformersを選択
-3. 新しいウィンドウが立ち上がる。左下にContainer jetson_contaner…と表示されてればOK
+2. Select the running l4t-ptx-transformers
+3. A new window opens. If "Container jetson_container..." appears in the bottom left, it's OK
 
-### 3. 作業ディレクトリの設定
+### 3. Setting Working Directory
 1. `File` → `Open Folder` → `/work`
-2. **注意**: workは直打ちしないとsuggestに出てこないので注意。地味にハマリどころ
-3. これでContainer環境でipynbノートブックがVSCode上で開ける
+2. **Note**: Type "work" manually as it doesn't appear in suggestions. This is a common pitfall
+3. Now you can open ipynb notebooks in VSCode within the container environment
 
-## SAM2 Video predictor 実行
+## Running SAM2 Video Predictor
 
-### 1. ノートブックの準備
+### 1. Notebook Preparation
 ```bash
 cd ./sam2/notebooks
 ```
 
-- GUIでvideo_predictor_exmple.ipynbを開く
+- Open video_predictor_example.ipynb in GUI
 
-### 2. カーネルの選択
-- 右上のSelect Kernel → Jupyter Kernel → jetson-docker
-- ない場合はVSCode再起動するとだいたい出てくる
+### 2. Kernel Selection
+- Select Kernel (top right) → Jupyter Kernel → jetson-docker
+- If not available, restart VSCode and it should appear
 
-### 3. 実行とトラブルシューティング
-- 後は普通に実行するとＯＫ
-- l4t-ml + transformer コンテナ環境だと下記でハマった
+### 3. Execution and Troubleshooting
+- Execute normally and it should work
+- Common issues with l4t-ml + transformer container:
 
-**よくある問題と対処法**:
+**Common Problems and Solutions**:
 
-1. **opencv, matplotlibがない**
+1. **opencv, matplotlib missing**
    ```bash
    pip install opencv-python matplotlib
    ```
 
-2. **numpy is not availableエラー**
-   - pip側 numpy verのエラーみたい。pip側numpyを1.26にしたらいけた
+2. **numpy is not available error**
+   - Seems to be a pip-side numpy version error. Setting pip-side numpy to 1.26 fixed it
    ```bash
    pip uninstall numpy
    python3 -m pip install -U pip
    ```
    - Restart Kernel
 
-### 4. 実行結果
-動いた
+### 4. Execution Result
+It worked!
 
-![SAM2 Video Predictor実行結果](/assets/images/sam2-video-predictor.png)
+![SAM2 Video Predictor Execution Result](/assets/images/sam2-video-predictor.png)
 
-## GPUリソースの確認
+## GPU Resource Monitoring
 
-### tegrastatsによる監視
-- GPU使用してるかどうかは`tegrastats`で確認できる
-- GR3D_FREQがJetson OrinのGPUリソース消費
-- `predictor.propagate_in_video`実行中に`tegrastats`で確認し、GPUリソースが増加していればGPU上でSAM2を処理できている
+### Monitoring with tegrastats
+- GPU usage can be checked with `tegrastats`
+- GR3D_FREQ shows Jetson Orin GPU resource consumption
+- Check with `tegrastats` during `predictor.propagate_in_video` execution. If GPU resources increase, SAM2 is processing on GPU
 
-**実行例**:
+**Execution Example**:
 
 ```
 [2%@1728,44%@1728,4%@1728,30%@1728,4%@729,3%@729] **GR3D_FREQ 99%** cpu@54.468C soc2@52.687C soc0@53.406C gpu@55.093C tj@55.093C soc1@52.718C VDD_IN 18426mW/7206mW VDD_CPU_GPU_CV 7601mW/922mW VDD_SOC 5651mW/3175mW
 08-24-2025 17:49:08 RAM 7124/7620MB (lfb 1x1MB) SWAP 3906/20194MB (cached 159MB) CPU 
 ```
 
-→ 99%になっている
+→ Running at 99%
 
-## その他
+## Other Notes
 
-- 本Docker環境を使うことでそのままSLM(llama-3 on hugging face)なども普通に実行できた
+- Using this Docker environment, you can also run SLM (llama-3 on Hugging Face) normally
