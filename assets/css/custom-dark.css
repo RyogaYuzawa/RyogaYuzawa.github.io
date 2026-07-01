@@ -1,13 +1,13 @@
 /* ダークテーマ用のカスタムスタイル */
 body {
-    background-color: #1a1a1a !important;
+    background-color: #303030 !important;
     color: #e0e0e0 !important;
 }
 
 /* ヘッダー部分 */
 .site-header {
-    background-color: #2d2d2d !important;
-    border-bottom: 1px solid #404040 !important;
+    background-color: #404040 !important;
+    border-bottom: 1px solid #565656 !important;
 }
 
 /* ナビゲーション */
@@ -21,7 +21,7 @@ body {
 
 /* メインコンテンツエリア */
 .site-content {
-    background-color: #1a1a1a !important;
+    background-color: #303030 !important;
 }
 
 /* 投稿のタイトル */
@@ -67,7 +67,7 @@ pre {
 
 /* テーブル */
 table {
-    background-color: #2d2d2d !important;
+    background-color: #404040 !important;
     color: #e0e0e0 !important;
 }
 
@@ -77,26 +77,26 @@ th, td {
 
 /* 引用ブロック */
 blockquote {
-    background-color: #2d2d2d !important;
+    background-color: #404040 !important;
     border-left: 4px solid #4a9eff !important;
     color: #c0c0c0 !important;
 }
 
 /* フッター */
 .site-footer {
-    background-color: #2d2d2d !important;
-    border-top: 1px solid #404040 !important;
+    background-color: #404040 !important;
+    border-top: 1px solid #565656 !important;
     color: #c0c0c0 !important;
 }
 
 /* ページネーション */
 .pagination {
-    background-color: #2d2d2d !important;
+    background-color: #404040 !important;
 }
 
 .pagination .page-link {
-    background-color: #2d2d2d !important;
-    border-color: #404040 !important;
+    background-color: #404040 !important;
+    border-color: #565656 !important;
     color: #e0e0e0 !important;
 }
 
@@ -146,7 +146,7 @@ hr {
 
 /* 技術スタック */
 .tech-stack {
-    background-color: #2d2d2d !important;
+    background-color: #404040 !important;
     padding: 20px !important;
     border-radius: 8px !important;
     border: 1px solid #404040 !important;
@@ -183,14 +183,14 @@ hr {
 .category-links a:hover {
     color: #6bb6ff !important;
     border-left-color: #4a9eff !important;
-    background-color: #2d2d2d !important;
+    background-color: #404040 !important;
     padding-left: 20px !important;
 }
 
 /* 投稿一覧のスタイル */
 .post-item {
-    background-color: #2d2d2d !important;
-    border: 1px solid #404040 !important;
+    background-color: #404040 !important;
+    border: 1px solid #565656 !important;
     border-radius: 8px !important;
     padding: 20px !important;
     margin-bottom: 20px !important;

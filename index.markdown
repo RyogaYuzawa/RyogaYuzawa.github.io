@@ -4,6 +4,3 @@
 
 layout: home
 ---
-
-<h1 class="welcome-title">Welcome to Edge AI Implementation Memo</h1>
-This blog is a memo for recording the implementation process of embedded AI technology.
