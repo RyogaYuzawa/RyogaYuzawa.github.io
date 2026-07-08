@@ -1,0 +1,16 @@
+<header class="site-header">
+  <div class="wrapper site-header-inner">
+    <a class="site-title" rel="author" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
+
+    {%- if site.header_pages -%}
+      <nav class="site-nav" aria-label="Primary">
+        {%- for path in site.header_pages -%}
+          {%- assign page_path = site.pages | where: "path", path | first -%}
+          {%- if page_path and page_path.title -%}
+            <a class="page-link" href="{{ page_path.url | relative_url }}">{{ page_path.title | escape }}</a>
+          {%- endif -%}
+        {%- endfor -%}
+      </nav>
+    {%- endif -%}
+  </div>
+</header>
