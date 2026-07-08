@@ -8,6 +8,7 @@ tags: [FPGA, Xilinx, Zynq]
 image: https://storage.googleapis.com/zenn-user-upload/359b234b40d0-20230505.png
 description: "Complete guide to creating HDMI graphic display IP using Vivado and Vitis HLS. Learn AXI bus control and VGA timing for FPGA graphics."
 keywords: "FPGA, Zynq, Vivado, Vitis HLS, HDMI, VGA, AXI Bus, Graphics, IP Design"
+summary: "A detailed implementation note on building a custom HDMI graphic display block for Zynq, based on a book workflow but translated into a practical project structure. The post explains the design goals for DDR-backed image display, VGA-class timing, GPIO-controlled addressing, and Vivado IP integration, then breaks down the AXI read control state machine, the display pipeline, and the supporting Verilog modules used to drive video output from programmable logic."
 ---
 
 ## Introduction

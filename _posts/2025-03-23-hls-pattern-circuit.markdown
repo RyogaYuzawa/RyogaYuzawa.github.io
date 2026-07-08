@@ -8,6 +8,7 @@ tags: [VitisHLS, FPGA, Zybo, High-Level Synthesis]
 image: https://storage.googleapis.com/zenn-user-upload/ac8ac837b60f-20230426.png
 description: "Learn how to create pattern display circuits using Vitis HLS high-level synthesis. Complete guide with C-RTL cosimulation and waveform analysis."
 keywords: "Vitis HLS, High-Level Synthesis, FPGA, Pattern Display, C-RTL Cosimulation, Waveform Analysis"
+summary: "A hands-on note focused on creating a pattern drawing circuit with Vitis HLS and validating how the synthesized hardware actually behaves. The article follows the flow from project creation and C-based test bench setup through synthesis, C-RTL cosimulation, and waveform inspection in Vivado, using a rectangle fill example to show how image data is generated, how AXI burst transfers appear on the bus, and how to confirm timing and overlap behavior from the resulting traces."
 ---
 
 ## Introduction
@@ -95,4 +96,3 @@ Displaying the saved `imagedata.raw` confirmed that the intended image is correc
 ## Conclusion
 
 In this post, a simple pattern display circuit was created using Vitis HLS high-level synthesis. AXI bus transfer behaviors were validated through waveform simulation, and the generated image data was confirmed to match the intended design. Future work will involve deploying the generated IP onto the actual Zybo Z7-20 FPGA for further verification.
-

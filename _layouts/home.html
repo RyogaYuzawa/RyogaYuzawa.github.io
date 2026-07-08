@@ -42,10 +42,12 @@ layout: default
           {%- endif -%}
           
           <div class="post-excerpt">
-            {%- if post.excerpt -%}
-              {{ post.excerpt | markdownify | strip_html | normalize_whitespace | remove_first: "Introduction " | truncate: 180 }}
+            {%- if post.summary -%}
+              {{ post.summary | normalize_whitespace }}
+            {%- elsif post.excerpt -%}
+              {{ post.excerpt | markdownify | strip_html | normalize_whitespace | remove_first: "Introduction " | truncate: 360 }}
             {%- else -%}
-              {%- assign content = post.content | markdownify | strip_html | normalize_whitespace | remove_first: "Introduction " | truncate: 200, '...' -%}
+              {%- assign content = post.content | markdownify | strip_html | normalize_whitespace | remove_first: "Introduction " | truncate: 400, '...' -%}
               {{ content }}
             {%- endif -%}
           </div>

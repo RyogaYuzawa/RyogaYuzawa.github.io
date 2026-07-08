@@ -8,6 +8,7 @@ tags: [VitisHLS, FPGA, Zybo, High-Level Synthesis]
 image: https://storage.googleapis.com/zenn-user-upload/a28bb25bccb4-20240817.png
 description: "Complete guide to ResNet quantization and inference on Xilinx DPU IP using Vitis AI. Step-by-step tutorial for AI model deployment on FPGA."
 keywords: "Vitis AI, ResNet, DPU IP, FPGA, AI Quantization, Model Inference, Zynq MPSoC, KV260"
+summary: "A step-by-step memo for taking a ResNet model through the Vitis AI flow and running inference on AMD Xilinx DPU IP, aimed at people who only revisit the toolchain occasionally. It covers preparing the host-side Vitis AI Docker environment, flashing the official KV260 image with the DPU-enabled platform, understanding where quantization and cross-compilation happen, and using the standard Xilinx tutorial flow to move from a PyTorch model to int8 deployment and runtime inference on FPGA hardware."
 ---
 ## Introduction
 This is a memo outlining the basic steps to run a DNN model using Vitis AI and Zynq MPSoC, as I had forgotten many details after a long break. It's easy to forget FPGA-related procedures each time.
@@ -391,5 +392,4 @@ Successful execution:
 
 ## Conclusion
 We've reviewed the basic workflow for model quantization, deployment, and application execution. Using DPU IP on Zynq provides an experience similar to utilizing dedicated NPUs.
-
 

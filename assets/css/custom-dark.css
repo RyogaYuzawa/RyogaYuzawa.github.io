@@ -171,6 +171,8 @@ body {
 
 .post-content {
     min-width: 0;
+    line-height: 1.9;
+    letter-spacing: 0.012em;
 }
 
 .section-heading {
@@ -382,6 +384,18 @@ pre,
 .post-content p,
 .post-content li {
     overflow-wrap: anywhere;
+}
+
+.post-content p,
+.post-content ul,
+.post-content ol,
+.post-content pre,
+.post-content blockquote {
+    margin-bottom: 1.2rem;
+}
+
+.post-content li + li {
+    margin-top: 0.35rem;
 }
 
 .rss-subscribe {

@@ -8,6 +8,7 @@ tags: [FPGA, Xilinx, Zynq,MIPI]
 image: https://storage.googleapis.com/zenn-user-upload/aee8ff073552-20230402.png
 description: "Learn how to implement MIPI CSI-2 Rx and DSI Tx subsystems on Xilinx Zynq FPGA. Complete guide with Vivado IP design and Vitis implementation."
 keywords: "MIPI, CSI-2, DSI, FPGA, Zynq, Xilinx, Vivado, Vitis, Video Processing"
+summary: "A system-design memo for bringing up MIPI video input and output on Xilinx Zynq platforms using the vendor-provided CSI-2 RX and DSI TX subsystems. The article walks through the role of the D-PHY, AXI Lite, and AXI-Stream interfaces, how to generate and inspect the Vivado example design, how to export the hardware into Vitis, and how to reuse the provided driver examples as a starting point for actual camera and display pipelines built on FPGA video IP."
 ---
 
 ## Introduction
@@ -152,4 +153,3 @@ After verifying the constraints file, perform the following:
 
 ## Conclusion
 Comments and corrections are welcome!
-

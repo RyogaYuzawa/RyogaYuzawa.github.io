@@ -8,6 +8,7 @@ tags: [Jetson Orin Nano, SAM2, Docker, VSCode, Computer Vision, AI, Environment 
 image: /assets/images/sam2-video-predictor.png
 description: "A guide to setting up SAM2 (Segment Anything Model 2) on Jetson Orin Nano Super, creating an efficient development environment with Docker containers and VSCode integration."
 keywords: "Jetson Orin Nano, SAM2, Docker, VSCode, Computer Vision, AI, Environment Setup, Jetson"
+summary: "A practical setup memo for running SAM2 video segmentation on Jetson Orin Nano Super with a lightweight, repeatable development workflow. The article covers building a Jetson-compatible PyTorch and transformers container with jetson-containers, mitigating NCCL memory pressure during image builds, cloning and configuring SAM2 with smaller checkpoints for limited-memory environments, and integrating the workflow with VSCode Dev Containers and Jupyter kernels so notebooks can be executed smoothly inside Docker."
 ---
 
 ## Introduction
