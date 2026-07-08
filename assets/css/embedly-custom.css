@@ -71,8 +71,10 @@ code {
   margin: 0 !important;
 }
 
-/* インラインコードのみイタリック（pre内のコードは除外） */
+/* インラインコードは本文と馴染む黒の通常書体にする */
 :not(pre) > code {
-  font-style: italic;
-  color: #87CEEB !important; /* 水色 */
+  font-family: "Times New Roman", Times, serif !important;
+  font-size: 1em !important;
+  font-style: italic !important;
+  color: #111111 !important;
 }

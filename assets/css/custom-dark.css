@@ -171,8 +171,8 @@ body {
 
 .post-content {
     min-width: 0;
-    line-height: 1.9;
-    letter-spacing: 0.012em;
+    line-height: 1.7;
+    letter-spacing: 0.006em;
 }
 
 .section-heading {
@@ -426,11 +426,11 @@ pre,
 .post-content ol,
 .post-content pre,
 .post-content blockquote {
-    margin-bottom: 1.2rem;
+    margin-bottom: 1rem;
 }
 
 .post-content li + li {
-    margin-top: 0.35rem;
+    margin-top: 0.24rem;
 }
 
 .rss-subscribe {

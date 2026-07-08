@@ -227,10 +227,6 @@ The problems were:
 - The gradient direction was flipped every 64 dots
 - The lower 10% of the screen was completely black, probably because the vertical blanking period had not been handled properly
 
-So I discussed it with ChatGPT again:
-
-![ChatGPT discussion snapshot](/assets/media/posts/chatgpt-pattern-display-circuit/chatgpt-discussion.png)
-
 Then I revised the code:
 
 ```verilog
