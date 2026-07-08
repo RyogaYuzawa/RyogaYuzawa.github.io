@@ -5,7 +5,7 @@ date: 2025-03-23
 author: Ryoga Yuzawa
 categories: [FPGA,Zynq]
 tags: [FPGA, Xilinx, Zynq]
-image: https://storage.googleapis.com/zenn-user-upload/359b234b40d0-20230505.png
+image: /assets/media/posts/vitis-hls/hero.png
 description: "Complete guide to creating HDMI graphic display IP using Vivado and Vitis HLS. Learn AXI bus control and VGA timing for FPGA graphics."
 keywords: "FPGA, Zynq, Vivado, Vitis HLS, HDMI, VGA, AXI Bus, Graphics, IP Design"
 summary: "A detailed implementation note on building a custom HDMI graphic display block for Zynq, based on a book workflow but translated into a practical project structure. The post explains the design goals for DDR-backed image display, VGA-class timing, GPIO-controlled addressing, and Vivado IP integration, then breaks down the AXI read control state machine, the display pipeline, and the supporting Verilog modules used to drive video output from programmable logic."
@@ -50,7 +50,7 @@ After creating the project in Vivado and importing the source code, the hierarch
 At the top level, in `Display.v`, the interfaces of the various blocks are connected.  
 The following sections explain the operation of each block.
 
-![Hierarchy](https://storage.googleapis.com/zenn-user-upload/7c9ed12e7a4a-20230505.png)
+![Hierarchy](/assets/media/posts/vitis-hls/hierarchy.png)
 
 ## VGA VBlank Detection Module
 A Verilog module designed to detect the vertical blanking period (VBLANK) of a VGA display.  
@@ -259,7 +259,7 @@ Now that the operation is verified, let's package it as a custom IP.
 - Run Synthesis  
 - Create and Package New IP → Review and Package → Package IP  
 - Display IP is now created  
-![IP Packaged](https://storage.googleapis.com/zenn-user-upload/29637682063f-20230505.png)
+![IP Packaged](/assets/media/posts/vitis-hls/ip-packaged.png)
 
 ## Designing the Graphic Display Circuit
 
@@ -279,7 +279,7 @@ Now that the operation is verified, let's package it as a custom IP.
   - Specify the `S_AXI` port and run Connection Automation  
 
 Something like this:  
-![Block Design Setup](https://storage.googleapis.com/zenn-user-upload/6c405db5e4a0-20230505.png)
+![Block Design Setup](/assets/media/posts/vitis-hls/block-design-setup.png)
 
 - Connect HDMItoVGA IP to the output of Display IP  
 - Create External Ports and rename them accordingly  
@@ -287,7 +287,7 @@ Something like this:
 - Create HDL Wrapper  
 
 **Block Design Completed**  
-![Block Design Final](https://storage.googleapis.com/zenn-user-upload/359b234b40d0-20230505.png)
+![Block Design Final](/assets/media/posts/vitis-hls/hero.png)
 
 - Import constraint file  
 - Generate Bitstream  
@@ -297,7 +297,7 @@ Something like this:
 - Export Hardware  
 - Save TCL script (for Git management)  
 - Launch Vitis IDE  
-![Vitis Launch](https://storage.googleapis.com/zenn-user-upload/697182b39c1e-20230505.png)
+![Vitis Launch](/assets/media/posts/vitis-hls/vitis-launch.png)
 
 - Create Application Project  
 - Use the `.xsa` file from Export Hardware as the platform  
@@ -369,7 +369,7 @@ usbipd wsl attach --busid <busid>
 
 - Program the FPGA  
 - Debug As → Set breakpoints to verify the test program  
-![Debug Check](https://storage.googleapis.com/zenn-user-upload/0f77a3bbe116-20230505.png)
+![Debug Check](/assets/media/posts/vitis-hls/debug-check.png)
 
 **Confirmed it works as intended**  
 As usual, I’m skipping screenshots of the actual output from the FPGA because it's a hassle to capture.

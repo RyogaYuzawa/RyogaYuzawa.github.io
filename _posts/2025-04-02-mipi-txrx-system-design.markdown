@@ -5,7 +5,7 @@ date: 2025-04-02
 author: Ryoga Yuzawa
 categories: [FPGA,MIPI,Video Application]
 tags: [FPGA, Xilinx, Zynq,MIPI]
-image: https://storage.googleapis.com/zenn-user-upload/aee8ff073552-20230402.png
+image: /assets/media/posts/mipi-txrx-system-design/hero.png
 description: "Learn how to implement MIPI CSI-2 Rx and DSI Tx subsystems on Xilinx Zynq FPGA. Complete guide with Vivado IP design and Vitis implementation."
 keywords: "MIPI, CSI-2, DSI, FPGA, Zynq, Xilinx, Vivado, Vitis, Video Processing"
 summary: "A system-design memo for bringing up MIPI video input and output on Xilinx Zynq platforms using the vendor-provided CSI-2 RX and DSI TX subsystems. The article walks through the role of the D-PHY, AXI Lite, and AXI-Stream interfaces, how to generate and inspect the Vivado example design, how to export the hardware into Vitis, and how to reuse the provided driver examples as a starting point for actual camera and display pipelines built on FPGA video IP."
@@ -35,15 +35,15 @@ The subsystem receives the signal through the differential D-PHY layer and conve
 - Video format (RGB888, YUV844, etc.) is set in the Vivado IP block design.
 - Lane count and transmission rate are configured in Vivado.
 
-![](https://storage.googleapis.com/zenn-user-upload/aee8ff073552-20230402.png)
+![](/assets/media/posts/mipi-txrx-system-design/hero.png)
 
 ## MIPI CSI-2 Overview
 MIPI CSI-2 is a differential signaling interface mainly used for image sensors and displays. The physical layer is D-PHY. The detailed specifications are not publicly available unless one is a member of the MIPI Alliance; specifications available online (e.g., the document from NXP on CIS) are referenced here.
 
 <a href="https://www.nxp.com/docs/en/application-note/AN5305.pdf" data-card-controls="0" class="embedly-card">Link</a>
 
-![](https://storage.googleapis.com/zenn-user-upload/915415bf97ad-20230401.png)
-![](https://storage.googleapis.com/zenn-user-upload/58ca2d5679e1-20230401.png)
+![](/assets/media/posts/mipi-txrx-system-design/csi2-rx-subsystem.png)
+![](/assets/media/posts/mipi-txrx-system-design/mipi-overview.png)
 
 ## Project Implementation
 
@@ -57,7 +57,7 @@ MIPI CSI-2 is a differential signaling interface mainly used for image sensors a
 - Export Hardware by saving the XSA file to an appropriate directory.
 - The block design created is as follows:
 
-![](https://storage.googleapis.com/zenn-user-upload/16af8ec08a6f-20230709.png)
+![](/assets/media/posts/mipi-txrx-system-design/vivado-example-block-design.png)
 
 ### Importing the Example Design into Vitis
 - Launch Vitis.
@@ -66,8 +66,8 @@ MIPI CSI-2 is a differential signaling interface mainly used for image sensors a
 - Open platform.spr and navigate to Board Support Package -> Drivers.
 - Import examples for csirx_0 / mipiciss by checking the sp701 folder and clicking OK.
 
-![](https://storage.googleapis.com/zenn-user-upload/6423042b427b-20230401.png)
-![](https://storage.googleapis.com/zenn-user-upload/37d28b233db4-20230401.png =400x)
+![](/assets/media/posts/mipi-txrx-system-design/vitis-driver-import.png)
+![](/assets/media/posts/mipi-txrx-system-design/vitis-driver-import-checked.png =400x)
 
 - Multiple files, including xmipi_sp701_example.c, will be imported.
 - For actual usage, right-click the project and build it.
@@ -81,14 +81,14 @@ MIPI CSI-2 is a differential signaling interface mainly used for image sensors a
 - Only HDMI/DSI will be used in hardware; no need to input Display signals into the Zynq PS.
 
 ### Zynq MPSoC
-![](https://storage.googleapis.com/zenn-user-upload/00c3e0228c4e-20230709.png)
-![](https://storage.googleapis.com/zenn-user-upload/f62e74a195e3-20230709.png)
+![](/assets/media/posts/mipi-txrx-system-design/hardware-block-1.png)
+![](/assets/media/posts/mipi-txrx-system-design/hardware-block-2.png)
 
 ### HDMI Display Path
-![](https://storage.googleapis.com/zenn-user-upload/2fee9b4aab5b-20230709.png)
+![](/assets/media/posts/mipi-txrx-system-design/hardware-block-3.png)
 
 ### DSI Display Path
-![](https://storage.googleapis.com/zenn-user-upload/cd44befc1cea-20230709.png)
+![](/assets/media/posts/mipi-txrx-system-design/hardware-block-4.png)
 
 #### MIPI DSI Tx IP Configuration
 - The DSI Tx IP supports DCS LP Command mode, but appears to be receive-only (no Tx).
@@ -97,10 +97,10 @@ MIPI CSI-2 is a differential signaling interface mainly used for image sensors a
 - The video signal is sent over an AXI-Stream, separate from the control signals.
 - The operations performed in the DSI Display path are essentially the same as those on the CSI-2 Rx Subsystem for CMOS image sensor input.
 
-![](https://storage.googleapis.com/zenn-user-upload/e2d871ee9229-20230709.png)
+![](/assets/media/posts/mipi-txrx-system-design/dsi-tx-1.png)
 
 #### Pin Assignment
-![](https://storage.googleapis.com/zenn-user-upload/b3b244c9de42-20230709.png)
+![](/assets/media/posts/mipi-txrx-system-design/dsi-tx-2.png)
 
 Pins can be assigned from the HP ports. On the ZCU102 evaluation board, the available HP ports are connected to the FMC connector. In cases where an evaluation board does not expose HP ports, assignment must be performed in the constraints file.
 
@@ -108,7 +108,7 @@ Pins can be assigned from the HP ports. On the ZCU102 evaluation board, the avai
 
 The diagram below shows the pin assignment for ZCU102. Numerous HP ports are available (according to Xilinx official documentation):
 
-![](https://storage.googleapis.com/zenn-user-upload/19f48d626a3c-20230709.png)
+![](/assets/media/posts/mipi-txrx-system-design/dsi-tx-3.png)
 
 Refer to the following for additional details:  
 AR# 67963: Zynq UltraScale+ MPSoC ZCU102 Evaluation Kit - UG1182 (v1.0) - Correction of FMC Pinout  

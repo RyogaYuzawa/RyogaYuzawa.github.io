@@ -5,7 +5,7 @@ date: 2025-03-23
 author: Ryoga Yuzawa
 categories: [FPGA, VitisHLS, Zybo]
 tags: [VitisHLS, FPGA, Zybo, High-Level Synthesis]
-image: https://storage.googleapis.com/zenn-user-upload/a28bb25bccb4-20240817.png
+image: /assets/media/posts/vitis-ai-resnet/architecture.png
 description: "Complete guide to ResNet quantization and inference on Xilinx DPU IP using Vitis AI. Step-by-step tutorial for AI model deployment on FPGA."
 keywords: "Vitis AI, ResNet, DPU IP, FPGA, AI Quantization, Model Inference, Zynq MPSoC, KV260"
 summary: "A step-by-step memo for taking a ResNet model through the Vitis AI flow and running inference on AMD Xilinx DPU IP, aimed at people who only revisit the toolchain occasionally. It covers preparing the host-side Vitis AI Docker environment, flashing the official KV260 image with the DPU-enabled platform, understanding where quantization and cross-compilation happen, and using the standard Xilinx tutorial flow to move from a PyTorch model to int8 deployment and runtime inference on FPGA hardware."
@@ -15,7 +15,7 @@ This is a memo outlining the basic steps to run a DNN model using Vitis AI and Z
 
 Also, it seems that Transformer models are not yet supported by the DPU IP. I prefer not to write HLS, so please support Transformers soon!
 
-![Architecture Image](https://storage.googleapis.com/zenn-user-upload/a28bb25bccb4-20240817.png)
+![Architecture Image](/assets/media/posts/vitis-ai-resnet/architecture.png)
 
 Following the former Xilinx tutorials, a ResNet model created with PyTorch is quantized from fp32 to int8, then deployed for inference on the DPU IP in the KV260. If you can achieve this basic flow, you can easily swap models at runtime on the FPGA by just changing the model and modifying application C++ files.  
 Reference tutorial:
@@ -375,7 +375,7 @@ cd ~/Vitis-AI/vai_library/samples/classification
 
 Result indicates successful inference:
 
-![Classification Result](https://storage.googleapis.com/zenn-user-upload/309a6782c38c-20240817.png)
+![Classification Result](/assets/media/posts/vitis-ai-resnet/classification-result.png)
 
 ### Lane Detection Task
 Try additional sample models:
@@ -388,8 +388,7 @@ cd ../lanedetect
 
 Successful execution:
 
-![Lane Detection Result](https://storage.googleapis.com/zenn-user-upload/63ce9d09b3e6-20240817.jpg)
+![Lane Detection Result](/assets/media/posts/vitis-ai-resnet/lane-detection-result.jpg)
 
 ## Conclusion
 We've reviewed the basic workflow for model quantization, deployment, and application execution. Using DPU IP on Zynq provides an experience similar to utilizing dedicated NPUs.
-

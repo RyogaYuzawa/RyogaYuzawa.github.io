@@ -5,7 +5,7 @@ date: 2025-03-23
 author: Ryoga Yuzawa
 categories: [FPGA, VitisHLS, Zybo]
 tags: [VitisHLS, FPGA, Zybo, High-Level Synthesis]
-image: https://storage.googleapis.com/zenn-user-upload/ac8ac837b60f-20230426.png
+image: /assets/media/posts/hls-pattern-circuit/hero.png
 description: "Learn how to create pattern display circuits using Vitis HLS high-level synthesis. Complete guide with C-RTL cosimulation and waveform analysis."
 keywords: "Vitis HLS, High-Level Synthesis, FPGA, Pattern Display, C-RTL Cosimulation, Waveform Analysis"
 summary: "A hands-on note focused on creating a pattern drawing circuit with Vitis HLS and validating how the synthesized hardware actually behaves. The article follows the flow from project creation and C-based test bench setup through synthesis, C-RTL cosimulation, and waveform inspection in Vivado, using a rectangle fill example to show how image data is generated, how AXI burst transfers appear on the bus, and how to confirm timing and overlap behavior from the resulting traces."
@@ -67,7 +67,7 @@ int main() {
 - Choose "Dump Trace: All" in the options and click "OK"
 - Upon completion, the following summary appears:
 
-![Cosimulation Summary](https://storage.googleapis.com/zenn-user-upload/6d4ee75bd9c6-20230426.png)
+![Cosimulation Summary](/assets/media/posts/hls-pattern-circuit/cosim-summary.png)
 
 - Select "Open Wave Viewer" to launch Vivado
 
@@ -78,16 +78,16 @@ int main() {
 - Address (`gmem_AWADDR[63:0]`) is issued without waiting for the completion of WDATA transfers, indicating overlap transfer (this is difficult to observe clearly due to fixed WDATA values, refer to page 358, "Introduction to AXI Bus" in the book)
 
 Overall waveform:
-![Waveform overview](https://storage.googleapis.com/zenn-user-upload/ac8ac837b60f-20230426.png)
+![Waveform overview](/assets/media/posts/hls-pattern-circuit/hero.png)
 
 Detailed waveform:
-![Waveform detail](https://storage.googleapis.com/zenn-user-upload/59a73991b74b-20230426.png)
+![Waveform detail](/assets/media/posts/hls-pattern-circuit/waveform-detail.png)
 
 ### Verification of Saved Image Data
 
 Displaying the saved `imagedata.raw` confirmed that the intended image is correctly drawn.
 
-![Generated image data](https://storage.googleapis.com/zenn-user-upload/3c8f024fdbf8-20230426.png)
+![Generated image data](/assets/media/posts/hls-pattern-circuit/generated-image-data.png)
 
 ### IP Generation
 
