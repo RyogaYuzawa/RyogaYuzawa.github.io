@@ -24,7 +24,7 @@ Operate the MIPI Rx/Tx IP.
 
 Reference Documentation (Xilinx official):
 
-<a href="https://docs.xilinx.com/r/en-US/pg232-mipi-csi2-rx/Implementing-the-Example-Design" data-card-controls="0" class="embedly-card">Link</a>
+{% include link-card.html url="https://docs.xilinx.com/r/en-US/pg232-mipi-csi2-rx/Implementing-the-Example-Design" label="Link" %}
 
 
 
@@ -40,7 +40,7 @@ The subsystem receives the signal through the differential D-PHY layer and conve
 ## MIPI CSI-2 Overview
 MIPI CSI-2 is a differential signaling interface mainly used for image sensors and displays. The physical layer is D-PHY. The detailed specifications are not publicly available unless one is a member of the MIPI Alliance; specifications available online (e.g., the document from NXP on CIS) are referenced here.
 
-<a href="https://www.nxp.com/docs/en/application-note/AN5305.pdf" data-card-controls="0" class="embedly-card">Link</a>
+{% include link-card.html url="https://www.nxp.com/docs/en/application-note/AN5305.pdf" label="Link" %}
 
 ![](/assets/media/posts/mipi-txrx-system-design/csi2-rx-subsystem.png)
 ![](/assets/media/posts/mipi-txrx-system-design/mipi-overview.png)
@@ -112,7 +112,7 @@ The diagram below shows the pin assignment for ZCU102. Numerous HP ports are ava
 
 Refer to the following for additional details:  
 AR# 67963: Zynq UltraScale+ MPSoC ZCU102 Evaluation Kit - UG1182 (v1.0) - Correction of FMC Pinout  
-<a href="https://support.xilinx.com/s/article/67963?language=ja" data-card-controls="0" class="embedly-card">Link</a>
+{% include link-card.html url="https://support.xilinx.com/s/article/67963?language=ja" label="Link" %}
 
 
 

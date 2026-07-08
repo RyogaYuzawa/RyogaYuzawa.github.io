@@ -20,7 +20,7 @@ Also, it seems that Transformer models are not yet supported by the DPU IP. I pr
 Following the former Xilinx tutorials, a ResNet model created with PyTorch is quantized from fp32 to int8, then deployed for inference on the DPU IP in the KV260. If you can achieve this basic flow, you can easily swap models at runtime on the FPGA by just changing the model and modifying application C++ files.  
 Reference tutorial:
 
-<a href="https://xilinx.github.io/Vitis-AI/3.0/html/docs/quickstart/mpsoc.html" data-card-controls="0" class="embedly-card">link</a>
+{% include link-card.html url="https://xilinx.github.io/Vitis-AI/3.0/html/docs/quickstart/mpsoc.html" label="link" %}
 ### Environment
 - FPGA: AMD KV260 Zynq MPSoC US+
 - Host PC: WSL2 Ubuntu 22.04
@@ -60,17 +60,19 @@ conda activate vitis-ai-pytorch
 ```
 
 ## FPGA (KV260) Vitis AI Preparation
-To simplify, download and flash the official pre-built SD card image provided by Xilinx.
-Download the image for your target device here:
+To simplify the setup, download and flash the official pre-built SD card image provided by Xilinx.
 
-<a href="https://xilinx.github.io/Vitis-AI/3.0/html/docs/quickstart/mpsoc.html" data-card-controls="0" class="embedly-card">link</a>
+Reference:
 
-The downloaded image includes Petalinux2022.1 with pre-built Vivado bitstreams containing DPU IP. Vitis AI is also pre-installed.
-If customizing your hardware or DPU IP, refer to the following articles:
+{% include link-card.html url="https://xilinx.github.io/Vitis-AI/3.0/html/docs/quickstart/mpsoc.html" label="Vitis AI MPSoC Quick Start" %}
 
-<a href="https://qiita.com/basaro_k/items/7295b214f80226b28e7a" data-card-controls="0" class="embedly-card">link</a>
+The downloaded image includes Petalinux 2022.1 with pre-built Vivado bitstreams containing DPU IP, and Vitis AI is already installed.
 
-<a href="https://qiita.com/basaro_k/items/dc439ffbc3ea3aed5eb2" data-card-controls="0" class="embedly-card">link</a>
+If you want to customize the hardware design or DPU IP, the following references are useful:
+
+{% include link-card.html url="https://qiita.com/basaro_k/items/7295b214f80226b28e7a" label="Custom Hardware Notes 1" %}
+
+{% include link-card.html url="https://qiita.com/basaro_k/items/dc439ffbc3ea3aed5eb2" label="Custom Hardware Notes 2" %}
 
 
 After setup, connect to the FPGA using a serial connection (e.g., TeraTerm with USB microB, baud rate 115200). Confirm the contents on the FPGA:
