@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Creating a Pattern Display Circuit with Vitis HLS High-Level Synthesis
-date: 2025-03-23
+date: 2023-04-26
 author: Ryoga Yuzawa
 categories: [FPGA, VitisHLS, Zybo]
 tags: [VitisHLS, FPGA, Zybo, High-Level Synthesis]

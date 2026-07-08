@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MIPI Tx/Rx System Design on Zynq
-date: 2025-04-02
+date: 2023-07-22
 author: Ryoga Yuzawa
 categories: [FPGA,MIPI,Video Application]
 tags: [FPGA, Xilinx, Zynq,MIPI]

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ResNet Quantization and Inference Execution with DPU IP and Vitis AI
-date: 2025-03-23
+date: 2024-08-18
 author: Ryoga Yuzawa
 categories: [FPGA, VitisHLS, Zybo]
 tags: [VitisHLS, FPGA, Zybo, High-Level Synthesis]

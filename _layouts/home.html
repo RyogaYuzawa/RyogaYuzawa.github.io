@@ -35,11 +35,15 @@ layout: default
         
         <!-- サムネイル画像と記事の内容 -->
         <div class="post-preview">
-          {%- if post.image -%}
-            <div class="post-thumbnail">
+          <div class="post-thumbnail{% unless post.image %} post-thumbnail-placeholder{% endunless %}">
+            {%- if post.image -%}
               <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="thumbnail-img">
-            </div>
-          {%- endif -%}
+            {%- else -%}
+              <div class="thumbnail-fallback" aria-hidden="true">
+                <span class="thumbnail-fallback-mark">e</span>
+              </div>
+            {%- endif -%}
+          </div>
           
           <div class="post-excerpt">
             {%- if post.summary -%}

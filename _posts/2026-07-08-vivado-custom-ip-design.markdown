@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Designing a Custom IP Block with Vivado
-date: 2026-07-08
+date: 2023-04-02
 author: Ryoga Yuzawa
 categories: [FPGA, Vivado, Zynq]
 tags: [Vivado, FPGA, Zynq, Custom IP, HDL, IP Design]

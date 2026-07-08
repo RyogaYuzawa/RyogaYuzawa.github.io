@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SAM2 Video Segmentation Inference on Jetson Orin Nano 
-date: 2025-08-24
+date: 2024-08-08
 author: Ryoga Yuzawa
 categories: [AI, Computer Vision, Jetson, Docker, SAM2]
 tags: [Jetson Orin Nano, SAM2, Docker, VSCode, Computer Vision, AI, Environment Setup]

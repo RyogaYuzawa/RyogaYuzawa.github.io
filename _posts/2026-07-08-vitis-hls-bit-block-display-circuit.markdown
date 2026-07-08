@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Creating a Bit-Block Display Circuit with Vitis HLS High-Level Synthesis
-date: 2026-07-08
+date: 2023-04-26
 author: Ryoga Yuzawa
 categories: [FPGA, VitisHLS, Zybo]
 tags: [VitisHLS, FPGA, Zybo, High-Level Synthesis, Bit Block Transfer, Display Circuit]
