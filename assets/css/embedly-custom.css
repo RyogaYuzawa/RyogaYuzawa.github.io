@@ -77,4 +77,7 @@ code {
   font-size: 1em !important;
   font-style: italic !important;
   color: #111111 !important;
+  background: #ecece6 !important;
+  padding: 0.12em 0.38em !important;
+  border-radius: 8px !important;
 }
