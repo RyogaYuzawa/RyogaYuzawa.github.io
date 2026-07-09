@@ -527,6 +527,13 @@ hr {
         flex-wrap: wrap;
     }
 
+    .site-title {
+        display: block;
+        max-width: 100%;
+        white-space: normal;
+        line-height: 1.2;
+    }
+
     .home-hero,
     .post-header,
     .home-body,
@@ -555,6 +562,23 @@ hr {
 
     .site-header-inner {
         min-height: 72px;
+    }
+
+    .site-title,
+    .site-title:visited {
+        font-size: 0.88rem;
+        letter-spacing: 0.06em;
+    }
+
+    .site-nav {
+        display: flex;
+        justify-content: flex-start;
+        gap: 6px;
+    }
+
+    .site-nav .page-link {
+        padding: 8px 12px;
+        font-size: 0.88rem;
     }
 
     .page-heading,
