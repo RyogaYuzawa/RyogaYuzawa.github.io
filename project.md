@@ -1,7 +1,7 @@
 ---
 layout: home
-title: Project
+title: Projects
 permalink: /project/
 entry_collection: projects
-list_title: Latest Projects
+list_title: Projects
 ---

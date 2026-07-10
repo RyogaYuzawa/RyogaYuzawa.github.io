@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 2nd Place in IEEE Low Power Computer Vision Challenge 2026 Track 2
+list_title: 2nd Place in IEEE LPCVC 2026 Track 2
 date: 2026-07-09
 author: Ryoga Yuzawa
 categories: [Project, Competition, Computer Vision]
@@ -14,17 +15,21 @@ summary: "This project note records our 2nd place result in the Action Recogniti
 ## Overview
 This project note records our result in the 2026 IEEE Low Power Computer Vision Challenge (LPCVC).
 
-In the **Action Recognition in Video** track, our team **TEAM-ALPHA** placed **2nd**. The official winners page lists the team as:
+In the **Action Recognition in Video** track, our team **TEAM-ALPHA** placed **2nd**. The submitted model was evaluated on the Qualcomm Dragonwing IQ-9075 EVK through Qualcomm AI Hub.
 
-The submitted model was evaluated on the `Qualcomm Dragonwing IQ-9075 EVK` through `Qualcomm AI Hub`.
+<img src="/assets/media/projects/lpcvc-2026-track2-2nd-place/qualcomm-dragonwing-chip.jpg" alt="Qualcomm Dragonwing chip" width="26%" style="float: right; margin: 0 0 1rem 1rem;">
 
-<img src="/assets/media/projects/lpcvc-2026-track2-2nd-place/qualcomm-dragonwing-chip.jpg" alt="Qualcomm Dragonwing chip" width="33%">
+- **Model**: DecomposedVideoMAE (ViT-B, 112px, float)
+- **Latency**: 19.322 ms on Dragonwing IQ-9075 EVK
+- **LB Accuracy**: 96.776%
 
-Reference:
+## Reference
 
 {% include link-card.html url="https://lpcv.ai/2026LPCVC/winners/" label="LPCVC 2026 Winners" %}
 
-## Public Code
+{% include link-card.html url="https://ecv-workshop.github.io/" label="ECV @ CVPR 2026 Workshop" %}
+
+## Solutions (public code)
 The implementation has been published here:
 
 {% include github-repo-card.html
@@ -34,13 +39,3 @@ The implementation has been published here:
   title="LPCVC_2026_Track2_team-alpha"
   subtitle="tasuku-takagi"
 %}
-
-## Competition
-This result was achieved in the following track:
-
-- **Challenge**: `2026 IEEE Low Power Computer Vision Challenge`
-- **Track**: `Track 2: Action Recognition in Video`
-- **Submission Window**: `March 1, 2026 12:00 AM ET` to `April 30, 2026 11:59 PM ET`
-- **Sponsor**: `Qualcomm Technologies, Inc.`
-- **Hardware Platform**: `Qualcomm Dragonwing IQ-9075 EVK`
-- **Software Platform**: `Qualcomm AI Hub`

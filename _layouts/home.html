@@ -18,12 +18,13 @@ layout: default
     </div>
     <ul class="post-list">
       {%- for post in entries -%}
+      {%- assign card_title = post.list_title | default: post.title -%}
       <li class="post-item">
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         <div class="post-header-container">
           <h3>
             <a class="post-link" href="{{ post.url | relative_url }}">
-              {{ post.title | escape }}
+              {{ card_title | escape }}
             </a>
           </h3>
         </div>
@@ -39,7 +40,7 @@ layout: default
         <div class="post-preview">
           <div class="post-thumbnail{% unless post.image %} post-thumbnail-placeholder{% endunless %}">
             {%- if post.image -%}
-              <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="thumbnail-img">
+              <img src="{{ post.image | relative_url }}" alt="{{ card_title }}" class="thumbnail-img">
             {%- else -%}
               <div class="thumbnail-fallback" aria-hidden="true">
                 <span class="thumbnail-fallback-mark">e</span>

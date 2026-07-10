@@ -5,7 +5,7 @@
 {%- if display_title == "Link" or display_title == "link" -%}
   {%- assign display_title = normalized_url -%}
 {%- endif -%}
-{%- assign screenshot_url = "https://image.thum.io/get/width/1200/" | append: raw_url -%}
+{%- assign favicon_url = "https://www.google.com/s2/favicons?sz=128&domain_url=" | append: raw_url -%}
 
 <a href="{{ raw_url }}" class="external-link-card" target="_blank" rel="noopener noreferrer">
   <span class="external-link-card__body">
@@ -14,11 +14,14 @@
     <span class="external-link-card__subtitle">{{ hostname }}</span>
   </span>
   <span class="external-link-card__thumb">
-    <img
-      src="{{ screenshot_url }}"
-      alt="{{ display_title }}"
-      class="external-link-card__image"
-      loading="lazy"
-    >
+    <span class="external-link-card__thumb-inner">
+      <img
+        src="{{ favicon_url }}"
+        alt="{{ hostname }}"
+        class="external-link-card__favicon"
+        loading="lazy"
+      >
+      <span class="external-link-card__host">{{ hostname }}</span>
+    </span>
   </span>
 </a>

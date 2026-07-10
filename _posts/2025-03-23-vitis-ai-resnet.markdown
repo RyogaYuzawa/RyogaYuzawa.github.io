@@ -68,7 +68,7 @@ Reference:
 
 The downloaded image includes Petalinux 2022.1 with pre-built Vivado bitstreams containing DPU IP, and Vitis AI is already installed.
 
-If you want to customize the hardware design or DPU IP, the following references are useful:
+If you want to customize the hardware design or DPU IP, the following references are useful (Japanese):
 
 {% include link-card.html url="https://qiita.com/basaro_k/items/7295b214f80226b28e7a" label="Custom Hardware Notes 1" %}
 
