@@ -10,7 +10,7 @@ simple_page_title: true
 <div class="about-profile-header">
   <div class="about-profile-name">
     <strong>Ryoga Yuzawa / 湯澤 凌芽</strong>
-    <p class="about-profile-summary">AI / ML engineer focused on computer vision and embedded AI, with experience in resource-constrained model deployment, DNN design including quantization and layer conversion, power-aware HW-SW co-optimization, and profiling/debugging using GPIO instrumentation and oscilloscopes. After working on interface and circuit design, I moved into developing AI-based autofocus features for the Sony Alpha series. Since 2025, I have been conducting research in computer vision and edge AI at UC Berkeley through Sony's overseas study program.</p>
+    <p class="about-profile-summary">AI / ML engineer focused on computer vision and embedded AI for camera systems, with experience in resource-constrained model deployment, DNN design including quantization and layer conversion, power-aware HW-SW co-optimization, and profiling/debugging using GPIO instrumentation and oscilloscopes. After working on interface and circuit design, I moved into developing AI-based autofocus features for the Sony Alpha series. Since 2025, I have been conducting research in computer vision and edge AI at UC Berkeley through Sony's overseas study program.</p>
   </div>
   <img class="about-profile-image" src="/assets/media/about/yuzawa-profile.jpeg" alt="Ryoga Yuzawa">
 </div>
