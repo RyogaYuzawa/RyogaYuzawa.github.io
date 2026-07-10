@@ -122,3 +122,21 @@ simple_page_title: true
 **ML / Deployment**: PyTorch, TensorFlow, ONNX, quantization, knowledge distillation
 
 **HW / Debug**: JTAG, oscilloscope, protocol analyzer, high-speed interfaces (I2C / SPI / MIPI DSI / CSI / LVDS)
+
+## Others
+
+<div class="about-inline-list">
+  <div class="about-inline-item">
+    <div class="about-inline-detail">
+      <div class="about-inline-title"><strong>TOEIC</strong></div>
+    </div>
+    <div class="about-inline-note">Score: 920 &mdash; Mar. 2024</div>
+  </div>
+
+  <div class="about-inline-item">
+    <div class="about-inline-detail">
+      <div class="about-inline-title"><strong>JDLA Deep Learning for Engineer</strong></div>
+    </div>
+    <div class="about-inline-note">Credential ID: 455955991 &mdash; Aug. 2023</div>
+  </div>
+</div>
