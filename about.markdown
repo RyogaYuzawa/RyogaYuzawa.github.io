@@ -21,7 +21,7 @@ simple_page_title: true
   <div class="about-timeline-item">
     <div class="about-timeline-header">
       <div class="about-timeline-org"><strong>UC Berkeley</strong></div>
-      <span class="about-timeline-location">Berkeley, CA</span>
+      <span class="about-timeline-location">Berkeley, CA, USA</span>
     </div>
     <div class="about-timeline-detail">
       <div class="about-timeline-role">Visiting Researcher &mdash; Mechanical Systems Control Lab (Berkeley AI Research)</div>
