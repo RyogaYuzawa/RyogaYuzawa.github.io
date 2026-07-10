@@ -22,6 +22,7 @@ It details the process of creating an HDMI graphic display IP using Vivado.
 - **OS:** WSL2 Ubuntu 20.04  
 - **Development Environment:** Vivado ML edition 2022.1 (Linux)
 
+
 ## Objective
 Develop an IP block in Vivado using HDL to output graphics via HDMI.  
 The IP block meets the following requirements:
@@ -40,6 +41,7 @@ The AXI bus is controlled by a state machine with the following states:
 - **SETADDR:** Issue the address on the AR channel.
 - **READING:** Read data from VRAM and write it to a FIFO.
 - **WAITING:** Wait when the FIFO is full.
+
 
 ## Implementation
 Source code is available at:  
@@ -62,18 +64,22 @@ Image data updates are performed during the VBLANK period.
 - **VGA_VS:** VGA vertical synchronization signal.  
 - **CLRVBLNK:** Signal to clear VBLANK (active high).
 
+
 ### Output
 - **VBLANK:** Indicates the vertical blanking period (active high).
+
 
 ### Internal Signals
 - **vblank_ff:** A 3-bit flip-flop array used to detect edges of the `VGA_VS` signal.  
 - **set_vblank:** Set high when `vblank_ff[2:1]` equals `2'b10`, indicating the detection of a rising edge on `VGA_VS`.
+
 
 ### Main Process
 - On each rising edge of the clock, the value of `VGA_VS` is shifted into the flip-flop array `vblank_ff`.  
 - When the reset (ARST) is active, `vblank_ff` is set to `3'b111`.  
 - The flag `set_vblank` is asserted when a rising edge of `VGA_VS` is detected (i.e., when `vblank_ff[2:1]` equals `2'b10`).  
 - The `VBLANK` signal is updated in a separate block. It is cleared if the reset or `CLRVBLNK` is active, and set when `set_vblank` is high.
+
 
 ### Verilog Code
 ```verilog
@@ -292,6 +298,7 @@ Something like this:
 - Import constraint file  
 - Generate Bitstream  
 
+
 ## On-Board Verification
 
 - Export Hardware  
@@ -305,10 +312,12 @@ Something like this:
 - Import `disp_test.c` into `src` of the `Display_Circuit_System` application  
 - Build Project  
 
+
 ## Test Program Operation Check
 
 - Variable settings omitted  
 - Code written in C
+
 
 ### VBlank Wait
 
@@ -356,6 +365,7 @@ And finally, the `main` function does the following (roughly):
 - Use `drawbox()` to write data into DRAM  
 - When done, call `wait_vblank` again  
 - Set `DISPON` signal inactive  
+
 
 ## Transfer to FPGA
 

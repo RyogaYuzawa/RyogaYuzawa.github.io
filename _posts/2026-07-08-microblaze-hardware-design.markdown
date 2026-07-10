@@ -21,9 +21,11 @@ My HDL background at this point was minimal. I had only spent about one day read
 - **OS**: WSL2 Ubuntu 20.04
 - **Development Environment**: Vivado ML Edition 2022.1 for Linux
 
+
 ## Objective
 - Implement a hardware system equivalent to the one previously built with Zynq, but this time using the soft-macro CPU MicroBlaze.
 - Because the UART communication path is already occupied on the Zynq PS side, direct PL-side communication is not available in the same way. Therefore, UART communication is handled through the MicroBlaze Debug Module.
+
 
 ## What Is MicroBlaze?
 - A soft-macro CPU provided by Xilinx.

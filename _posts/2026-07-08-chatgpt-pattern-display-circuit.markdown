@@ -26,6 +26,7 @@ Synthesize a pattern display circuit on FPGA and output an image through the HDM
 - **OS**: WSL2 Ubuntu 20.04
 - **Development Environment**: Vivado ML Edition 2022.1 for Linux
 
+
 ## Specification
 - Output from the FPGA board HDMI port
 - Display 8 colors including white and black
@@ -122,6 +123,7 @@ This was the part I wanted to do most. Based on the existing code, I modified `p
 - Use 4-bit gradation for each color
 - Split the horizontal direction into 10 sections to form 64-dot blocks, and split the vertical direction into 4 sections colored white, red, green, and blue from top to bottom
 - Change the gradation every 4 dots in the horizontal direction
+
 
 ### Target Image
 First, here is the goal image. The final `pattern.v` should reproduce this pattern:

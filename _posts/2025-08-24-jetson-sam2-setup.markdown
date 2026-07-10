@@ -24,6 +24,7 @@ Notes on running SAM2 video inference on Jetson Orin Nano
 - **cuDNN**: 12.6
 - **Python**: 3.10
 
+
 ## Creating PyTorch+Transformer Container for Jetson
 
 ### 1. Basic Setup
@@ -34,6 +35,7 @@ CUDA_VERSION=12.6 jetson-containers build l4t-ml transformers
 ```
 
 - Create l4t-ml (pytorch+etc) + transformers environment
+
 
 ### 2. Handling Memory Issues During NCCL Build
 Solution for Out of Memory errors during NCCL build:
@@ -49,6 +51,7 @@ make -j2 pkg.txz.build NVCC_GENCODE="-gencode=arch=compute_87,code=sm_87"
 
 - Limit job count to 2 to reduce memory usage
 - Build takes approximately 8 hours
+
 
 ### 3. Starting and Verifying the Container
 
@@ -66,6 +69,7 @@ pip list
 - If PyTorch, transformers, etc. are installed, the build is successful
 - If `nvidia-smi` works, it's OK. Jetson has GPU as SoC, so it shows N/A
 - You can enter the container even if it failed during build, in which case libraries will be missing
+
 
 ## SAM2 Installation
 
@@ -118,9 +122,11 @@ cd ./sam2/notebooks
 
 - Open video_predictor_example.ipynb in GUI
 
+
 ### 2. Kernel Selection
 - Select Kernel (top right) → Jupyter Kernel → jetson-docker
 - If not available, restart VSCode and it should appear
+
 
 ### 3. Execution and Troubleshooting
 - Execute normally and it should work

@@ -20,6 +20,7 @@ This post continues from the previous one, documenting the practical application
 - **OS**: WSL2 Ubuntu 20.04
 - **Development Environment**: Vivado ML edition 2022.1 Linux
 
+
 ## Objective
 
 Using Vitis HLS, create a pattern display circuit through high-level synthesis.
@@ -71,6 +72,7 @@ int main() {
 
 - Select "Open Wave Viewer" to launch Vivado
 
+
 ### Waveform Analysis
 
 - Simulation finished in approximately 2.732ms
@@ -92,6 +94,7 @@ Displaying the saved `imagedata.raw` confirmed that the intended image is correc
 ### IP Generation
 
 - Execute "Export RTL" and save as IP
+
 
 ## Conclusion
 

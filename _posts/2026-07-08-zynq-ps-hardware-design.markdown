@@ -21,6 +21,7 @@ At this point, my HDL experience was still limited to spending about a day readi
 - **OS**: WSL2 Ubuntu 20.04
 - **Development Environment**: Vivado ML Edition 2022.1 for Linux
 
+
 ## Objective
 - Control the PL side from the Zynq PS and drive the LEDs
 - Use GPIO as input so that the system can be controlled externally

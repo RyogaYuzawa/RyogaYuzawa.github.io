@@ -19,6 +19,7 @@ This document is a memo on using Xilinx-provided IP, namely the MIPI CSI-2 Rx Su
 - **OS:** WSL2 Ubuntu 20.04
 - **Development Environment:** Vivado ML Edition 2021.2 for Windows
 
+
 ## Objective
 Operate the MIPI Rx/Tx IP.
 
@@ -73,12 +74,14 @@ MIPI CSI-2 is a differential signaling interface mainly used for image sensors a
 - For actual usage, right-click the project and build it.
 - Launch the hardware debug session by selecting Run As / Debug As → Launch Hardware.
 
+
 ## Hardware Block
 
 ### Preliminaries
 - The Display Port on the Zynq Ultrascale+ is on the PS side.
 - HDMI/DSI ports are on the PL side.
 - Only HDMI/DSI will be used in hardware; no need to input Display signals into the Zynq PS.
+
 
 ### Zynq MPSoC
 ![](/assets/media/posts/mipi-txrx-system-design/hardware-block-1.png)

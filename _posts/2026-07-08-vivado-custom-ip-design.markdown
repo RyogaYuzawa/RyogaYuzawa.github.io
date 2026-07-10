@@ -21,6 +21,7 @@ In this post, the goal is to create a custom IP block with Vivado and integrate 
 - **OS**: WSL2 Ubuntu 20.04
 - **Development Environment**: Vivado ML Edition 2022.1 for Linux
 
+
 ## Objective
 Create a custom IP block with Vivado and integrate it into a circuit design.
 

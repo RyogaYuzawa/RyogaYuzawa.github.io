@@ -21,6 +21,7 @@ As a continuation of the previous article, I designed a character display circui
 - **OS**: WSL2 Ubuntu 20.04
 - **Development Environment**: Vivado ML Edition 2022.1 for Linux
 
+
 ## Objective
 Create a circuit that displays characters on a monitor through HDMI.
 
@@ -29,6 +30,7 @@ Create a circuit that displays characters on a monitor through HDMI.
 - Up to 80 characters horizontally and 80 lines vertically can be displayed
 - VRAM is used to store character codes and character colors
 - CGROM is used as a read-only memory that stores character patterns
+
 
 ## Implementation
 
@@ -60,6 +62,7 @@ At this stage, VRAM and CGROM are still missing.
 Check the summary and click OK.
 
 - Run `Out of Context per IP → Generate` to create the VRAM block.
+
 
 ### Generating CGROM
 - Add the `Block Memory Generator` IP

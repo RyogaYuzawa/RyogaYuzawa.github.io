@@ -21,6 +21,7 @@ In this post, I focus on building a bit-block display circuit with Vitis HLS and
 - **OS**: WSL2 Ubuntu 20.04
 - **Development Environment**: Vivado ML Edition 2022.1 for Linux
 
+
 ## Objective
 Use Vitis HLS to create a bit-block display circuit through high-level synthesis, package it as IP, and combine it with the previously created pattern display circuit inside a Zynq block design for hardware verification.
 
@@ -31,6 +32,7 @@ Previous post:
 - Two source images can be prepared as input.
 - Pixel-wise arithmetic is performed between the two images using transparency value `alpha`.
 - The calculation result is stored in display memory.
+
 
 ## Implementation
 
