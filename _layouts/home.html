@@ -4,18 +4,20 @@ layout: default
 
 <div class="home">
   {%- assign trimmed_content = content | strip -%}
+  {%- assign entry_collection = page.entry_collection | default: "posts" -%}
+  {%- assign entries = site[entry_collection] | sort: "date" | reverse -%}
   {%- if trimmed_content != "" -%}
     <div class="home-body">
       {{ content }}
     </div>
   {%- endif -%}
 
-  {%- if site.posts.size > 0 -%}
+  {%- if entries.size > 0 -%}
     <div class="section-heading">
       <h2 class="post-list-heading">{{ page.list_title | default: "Latest Posts" }}</h2>
     </div>
     <ul class="post-list">
-      {%- for post in site.posts -%}
+      {%- for post in entries -%}
       <li class="post-item">
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         <div class="post-header-container">

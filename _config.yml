@@ -33,9 +33,15 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
 
+collections:
+  projects:
+    output: true
+    permalink: /projects/:title/
+
 # Header navigation
 header_pages:
   - posts.md
+  - project.md
   - about.markdown
 
 markdown: kramdown
