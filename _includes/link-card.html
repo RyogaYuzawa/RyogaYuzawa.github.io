@@ -13,25 +13,27 @@
 {%- endif -%}
 {%- assign favicon_url = "https://www.google.com/s2/favicons?sz=128&domain_url=" | append: raw_url -%}
 
-<a href="{{ raw_url }}" class="external-link-card" target="_blank" rel="noopener noreferrer" data-url="{{ raw_url }}" data-hostname="{{ display_hostname }}">
-  <span class="external-link-card__body">
-    <span class="external-link-card__eyebrow">External Link</span>
-    <span class="external-link-card__title">{{ display_title }}</span>
-    <span class="external-link-card__subtitle">{{ display_hostname }}</span>
-  </span>
-  <span class="external-link-card__thumb">
-    <span class="external-link-card__mark" aria-hidden="true">{{ domain_mark }}</span>
-    <span class="external-link-card__thumb-inner">
-      <span class="external-link-card__thumb-badge">{{ domain_name }}</span>
-      <span class="external-link-card__thumb-brand">
-        <img
-          src="{{ favicon_url }}"
-          alt="{{ display_hostname }}"
-          class="external-link-card__favicon"
-          loading="lazy"
-        >
-        <span class="external-link-card__host">{{ display_hostname }}</span>
+<div class="card-block">
+  <a href="{{ raw_url }}" class="external-link-card" target="_blank" rel="noopener noreferrer" data-url="{{ raw_url }}" data-hostname="{{ display_hostname }}">
+    <span class="external-link-card__body">
+      <span class="external-link-card__eyebrow">External Link</span>
+      <span class="external-link-card__title">{{ display_title }}</span>
+      <span class="external-link-card__subtitle">{{ display_hostname }}</span>
+    </span>
+    <span class="external-link-card__thumb">
+      <span class="external-link-card__mark" aria-hidden="true">{{ domain_mark }}</span>
+      <span class="external-link-card__thumb-inner">
+        <span class="external-link-card__thumb-badge">{{ domain_name }}</span>
+        <span class="external-link-card__thumb-brand">
+          <img
+            src="{{ favicon_url }}"
+            alt="{{ display_hostname }}"
+            class="external-link-card__favicon"
+            loading="lazy"
+          >
+          <span class="external-link-card__host">{{ display_hostname }}</span>
+        </span>
       </span>
     </span>
-  </span>
-</a>
+  </a>
+</div>

@@ -17,7 +17,9 @@ This project note records our result in the 2026 IEEE Low Power Computer Vision 
 
 In the **Action Recognition in Video** track, our team **TEAM-ALPHA** placed **2nd**. The submitted model was evaluated on the Qualcomm Dragonwing IQ-9075 EVK through Qualcomm AI Hub.
 
-<img src="/assets/media/projects/lpcvc-2026-track2-2nd-place/qualcomm-dragonwing-chip.jpg" alt="Qualcomm Dragonwing chip" width="16%" style="float: right; margin: 0 0 1rem 1rem;">
+<div class="content-image-right-wrap">
+  <img src="/assets/media/projects/lpcvc-2026-track2-2nd-place/qualcomm-dragonwing-chip.jpg" alt="Qualcomm Dragonwing chip" class="content-image-right">
+</div>
 
 - **Model**: DecomposedVideoMAE (ViT-B, 112px, float)
 - **Latency**: 19.322 ms on Dragonwing IQ-9075 EVK

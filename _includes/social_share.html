@@ -52,7 +52,7 @@
 
     <!-- Copy URL Button -->
     <button class="share-btn copy-url" 
-            onclick="copyToClipboard('{{ page.url | absolute_url }}')"
+            onclick="copyToClipboard('{{ page.url | absolute_url }}', this)"
             title="Copy URL">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
         <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
@@ -63,10 +63,10 @@
 </div>
 
 <script>
-function copyToClipboard(url) {
+function copyToClipboard(url, buttonEl) {
   navigator.clipboard.writeText(url).then(function() {
     // Show feedback
-    const btn = event.target.closest('.copy-url');
+    const btn = buttonEl;
     const originalText = btn.querySelector('span').textContent;
     btn.querySelector('span').textContent = 'Copied!';
     btn.style.backgroundColor = '#28a745';
@@ -85,7 +85,7 @@ function copyToClipboard(url) {
     document.execCommand('copy');
     document.body.removeChild(textArea);
     
-    const btn = event.target.closest('.copy-url');
+    const btn = buttonEl;
     const originalText = btn.querySelector('span').textContent;
     btn.querySelector('span').textContent = 'Copied!';
     btn.style.backgroundColor = '#28a745';

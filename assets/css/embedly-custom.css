@@ -3,11 +3,19 @@
     padding: 0;
     border-radius: 5px;
     color: #fff;
+    width: 100%;
     max-width: 1000px;
     display: block;
     overflow: hidden;
     aspect-ratio: 16 / 5;
-  }
+}
+
+.card-block {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin: 0.95rem 0;
+}
 
 .embedly-card iframe,
 iframe.embedly-card {
@@ -32,6 +40,7 @@ iframe.embedly-card {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 320px);
   align-items: stretch;
+  width: 100%;
   max-width: 1000px;
   border: 1px solid rgba(17, 17, 17, 0.07);
   border-radius: 18px;
@@ -88,6 +97,7 @@ iframe.embedly-card {
   font-size: 1.08rem;
   font-weight: 700;
   line-height: 1.35;
+  text-wrap: balance;
   word-break: break-word;
 }
 
@@ -95,12 +105,14 @@ iframe.embedly-card {
   color: #5f5f5a;
   font-size: 0.92rem;
   line-height: 1.4;
+  overflow-wrap: anywhere;
 }
 
 .external-link-card {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 320px);
   align-items: stretch;
+  width: 100%;
   max-width: 1000px;
   border: 1px solid rgba(17, 17, 17, 0.07);
   border-radius: 18px;
@@ -140,6 +152,7 @@ iframe.embedly-card {
   font-size: 1.02rem;
   font-weight: 700;
   line-height: 1.35;
+  text-wrap: balance;
   word-break: break-word;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -151,6 +164,7 @@ iframe.embedly-card {
   color: #5f5f5a;
   font-size: 0.9rem;
   line-height: 1.4;
+  overflow-wrap: anywhere;
 }
 
 .external-link-card__thumb {
@@ -259,6 +273,7 @@ iframe.embedly-card {
   font-weight: 600;
   line-height: 1.25;
   text-align: left;
+  overflow-wrap: anywhere;
   word-break: break-word;
 }
 
@@ -275,12 +290,20 @@ iframe.embedly-card {
 }
 
 @media (max-width: 760px) {
+  .card-block {
+    margin: 0.82rem 0;
+  }
+
   .github-repo-card {
     grid-template-columns: 1fr;
+    max-width: 100%;
+    border-radius: 16px;
   }
 
   .external-link-card {
     grid-template-columns: 1fr;
+    max-width: 100%;
+    border-radius: 16px;
   }
 
   .github-repo-card__thumb,
@@ -295,11 +318,114 @@ iframe.embedly-card {
 
   .github-repo-card__thumb,
   .github-repo-card__image {
-    min-height: 116px;
+    min-height: 104px;
   }
 
   .external-link-card__thumb {
-    height: 116px;
+    height: 104px;
+  }
+
+  .github-repo-card__body,
+  .external-link-card__body {
+    padding: 12px 13px;
+    gap: 5px;
+    min-width: 0;
+  }
+
+  .github-repo-card__eyebrow,
+  .external-link-card__eyebrow {
+    font-size: 0.62rem;
+  }
+
+  .github-repo-card__title,
+  .external-link-card__title {
+    font-size: 0.86rem;
+    line-height: 1.25;
+  }
+
+  .github-repo-card__subtitle,
+  .external-link-card__subtitle {
+    font-size: 0.74rem;
+  }
+
+  .external-link-card__mark {
+    right: 10px;
+    bottom: 6px;
+    font-size: 3rem;
+  }
+
+  .external-link-card__thumb-inner,
+  .external-link-card__thumb-inner--overlay {
+    gap: 8px;
+    padding: 10px 12px 8px;
+  }
+
+  .external-link-card__thumb-badge {
+    padding: 4px 8px;
+    font-size: 0.64rem;
+  }
+
+  .external-link-card__thumb-brand {
+    gap: 8px;
+    margin-top: 0;
+    align-items: center;
+  }
+
+  .external-link-card__favicon,
+  .external-link-card__thumb-inner--overlay .external-link-card__favicon {
+    width: 30px;
+    height: 30px;
+    padding: 4px;
+  }
+
+  .external-link-card__host {
+    font-size: 0.7rem;
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 420px) {
+  .github-repo-card__thumb,
+  .github-repo-card__image,
+  .external-link-card__thumb {
+    min-height: 92px;
+    height: 92px;
+  }
+
+  .github-repo-card__body,
+  .external-link-card__body {
+    padding: 11px 11px 12px;
+  }
+
+  .github-repo-card__title,
+  .external-link-card__title {
+    font-size: 0.82rem;
+    line-height: 1.22;
+  }
+
+  .github-repo-card__subtitle,
+  .external-link-card__subtitle,
+  .external-link-card__host {
+    font-size: 0.68rem;
+    line-height: 1.18;
+  }
+
+  .external-link-card__thumb-inner,
+  .external-link-card__thumb-inner--overlay {
+    padding: 9px 10px 7px;
+    gap: 7px;
+  }
+
+  .external-link-card__thumb-badge {
+    padding: 3px 7px;
+    font-size: 0.6rem;
+  }
+
+  .external-link-card__favicon,
+  .external-link-card__thumb-inner--overlay .external-link-card__favicon {
+    width: 26px;
+    height: 26px;
+    padding: 3px;
   }
 }
 

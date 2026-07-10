@@ -68,7 +68,9 @@ MIPI CSI-2 is a differential signaling interface mainly used for image sensors a
 - Import examples for csirx_0 / mipiciss by checking the sp701 folder and clicking OK.
 
 ![](/assets/media/posts/mipi-txrx-system-design/vitis-driver-import.png)
-![](/assets/media/posts/mipi-txrx-system-design/vitis-driver-import-checked.png =400x)
+<div class="content-image-fixed-wrap">
+  <img src="/assets/media/posts/mipi-txrx-system-design/vitis-driver-import-checked.png" alt="" class="content-image-fixed-400">
+</div>
 
 - Multiple files, including xmipi_sp701_example.c, will be imported.
 - For actual usage, right-click the project and build it.
