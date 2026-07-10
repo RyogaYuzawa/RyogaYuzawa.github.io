@@ -35,7 +35,8 @@ My HDL background at this point was minimal. I had only spent about one day read
   - **ACE**: AXI extension
 
 MicroBlaze Processor Reference:
-<https://docs.xilinx.com/v/u/2018.2-English/ug984-vivado-microblaze-ref>
+
+{% include link-card.html url="https://docs.xilinx.com/v/u/2018.2-English/ug984-vivado-microblaze-ref" label="MicroBlaze Processor Reference Guide" %}
 
 ## Implementation
 
@@ -103,7 +104,8 @@ Next, recreate the application project, control GPIO from MicroBlaze, and light 
 Import `LED_test.c` through `Source → Build Project`.
 
 The code is based on the following publisher-provided reference:
-<https://www.shuwasystem.co.jp/support/7980html/6326.html>
+
+{% include link-card.html url="https://www.shuwasystem.co.jp/support/7980html/6326.html" label="Publisher support page" %}
 
 ```c
 /*xparameters.h

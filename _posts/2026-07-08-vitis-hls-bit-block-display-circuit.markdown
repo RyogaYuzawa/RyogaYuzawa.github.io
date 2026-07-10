@@ -38,7 +38,8 @@ Previous post:
 
 ### Project Creation to Synthesis
 Source code used in this flow is available from the publisher support page:
-<https://www.shuwasystem.co.jp/support/7980html/6326.html>
+
+{% include link-card.html url="https://www.shuwasystem.co.jp/support/7980html/6326.html" label="Publisher support page" %}
 
 Main steps:
 - Add the source file and test bench.

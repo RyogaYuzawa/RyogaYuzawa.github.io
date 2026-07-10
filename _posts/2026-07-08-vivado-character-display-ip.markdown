@@ -93,9 +93,6 @@ Now `chardisp_ip` can be called from the IP Catalog.
 - Create a test bench that writes values into memory and outputs a file
   - The overall procedure is the same as the earlier pattern display circuit design
 
-Reference:
-<https://zenn.dev/ryo_tan/articles/464484ae3de8e0>
-
 ![Simulation hierarchy](/assets/media/posts/vivado-character-display-ip/simulation-hierarchy.png)
 
 If the hierarchy looks like this, the setup is OK.

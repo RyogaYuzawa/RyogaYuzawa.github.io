@@ -82,9 +82,9 @@ git clone https://github.com/facebookresearch/sam2
 ### 2. Setup
 - Follow the official repository to install checkpoints, etc.
 - For Jetson, large models may have memory issues, so use lightweight models
-- If OOM occurs during video loading causing kernel crash, optimize memory
-   - Follow the steps here:
-      https://bone.jp/articles/2025/250125_JetsonOrinNanoSuper_4_memory
+- If OOM occurs during video loading causing kernel crash, optimize memory using the following note:
+
+{% include link-card.html url="https://bone.jp/articles/2025/250125_JetsonOrinNanoSuper_4_memory" label="Jetson Orin Nano Super Memory Optimization Note" %}
 
 **Lightweight Model Configuration**:
 ```python

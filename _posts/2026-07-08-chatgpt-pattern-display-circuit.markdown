@@ -55,7 +55,8 @@ Synthesize a pattern display circuit on FPGA and output an image through the HDM
 The circuit is composed of the following files:
 
 The code itself is not included here because I was unsure about the copyright status, but it is available at the following URL:
-<https://www.shuwasystem.co.jp/support/7980html/6326.html>
+
+{% include link-card.html url="https://www.shuwasystem.co.jp/support/7980html/6326.html" label="Publisher support page" %}
 
 - `vga_param.vh`
 - `syncgen.v`

@@ -338,7 +338,7 @@ where
 
 (Note added 8/18: mean and scale here are defined per channel in BGR order, not RGB.)
 
-https://github.com/Xilinx/Vitis-AI/blob/3.0/examples/vai_library/samples/classification/test_jpeg_classification_squeezenet.cpp#L98-L99
+{% include link-card.html url="https://github.com/Xilinx/Vitis-AI/blob/3.0/examples/vai_library/samples/classification/test_jpeg_classification_squeezenet.cpp#L98-L99" label="Vitis AI reference implementation" %}
 
 ## Model Deployment on KV260
 Transfer the generated quantization files to KV260:

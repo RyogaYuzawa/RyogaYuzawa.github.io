@@ -18,7 +18,7 @@ As a prerequisite, a GUI environment is required.
 
 - Go to the following page and download the Linux version of Vivado ML Edition:
 
-<https://japan.xilinx.com/support/download.html>
+{% include link-card.html url="https://japan.xilinx.com/support/download.html" label="AMD Xilinx download page" %}
 
 - Move to the downloaded directory from the Linux side.
 - Grant execution permission and run the installer:

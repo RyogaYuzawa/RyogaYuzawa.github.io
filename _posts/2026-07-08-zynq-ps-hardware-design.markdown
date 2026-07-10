@@ -27,8 +27,8 @@ At this point, my HDL experience was still limited to spending about a day readi
 - Use GPIO as input so that the system can be controlled externally
 
 Reference:
-- Zynq-7000 Technical Reference Manual  
-  <https://docs.xilinx.com/v/u/ja-JP/ug585-Zynq-7000-TRM>
+
+{% include link-card.html url="https://docs.xilinx.com/v/u/ja-JP/ug585-Zynq-7000-TRM" label="Zynq-7000 Technical Reference Manual" %}
 
 ## Implementation
 
