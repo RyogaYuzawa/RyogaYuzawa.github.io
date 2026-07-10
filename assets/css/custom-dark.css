@@ -58,7 +58,7 @@ body {
 
 .site-title,
 .site-title:visited {
-    color: var(--text) !important;
+    color: var(--text-muted) !important;
     font-size: 1rem;
     font-weight: 800;
     letter-spacing: 0.08em;
@@ -216,7 +216,7 @@ body {
     margin-bottom: 6px;
 }
 
-.page-section-heading .post-list-heading {
+.section-heading .post-list-heading {
     color: var(--text-muted) !important;
     text-transform: uppercase;
     letter-spacing: 0.08em;
