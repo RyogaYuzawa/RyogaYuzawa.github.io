@@ -55,13 +55,13 @@ simple_page_title: true
       <span class="about-timeline-location">Nagano, Japan</span>
     </div>
     <div class="about-timeline-detail">
-      <div class="about-timeline-role">Master of Engineering in Electrical and Computer Engineering</div>
+      <div class="about-timeline-role">Master of Engineering &mdash; Electrical and Computer Engineering</div>
       <span class="about-timeline-period">Apr. 2018 - Mar. 2020</span>
     </div>
   </div>
   <div class="about-timeline-item">
     <div class="about-timeline-detail">
-      <div class="about-timeline-role">Bachelor of Engineering in Electrical and Computer Engineering</div>
+      <div class="about-timeline-role">Bachelor of Engineering &mdash; Electrical and Computer Engineering</div>
       <span class="about-timeline-period">Apr. 2016 - Mar. 2018</span>
     </div>
   </div>

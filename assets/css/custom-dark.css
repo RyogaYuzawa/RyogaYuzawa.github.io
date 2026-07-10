@@ -902,10 +902,7 @@ table {
     }
 
     .about-timeline-detail {
-        display: grid;
-        grid-template-columns: minmax(0, 1fr) auto;
-        align-items: baseline;
-        gap: 10px;
+        display: block;
     }
 
     .about-timeline-role,
@@ -914,10 +911,18 @@ table {
         overflow-wrap: anywhere;
     }
 
+    .about-timeline-role {
+        font-size: 0.76rem;
+        line-height: 1.46;
+    }
+
     .about-timeline-period {
+        display: block;
+        margin-top: 0.18rem;
         text-align: right;
         white-space: normal;
-        max-width: 36vw;
+        max-width: none;
+        font-size: 0.74rem;
     }
 
     .about-inline-detail {
