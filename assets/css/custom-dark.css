@@ -430,11 +430,13 @@ a:hover {
 }
 
 .about-profile-header {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 24px;
     margin: 0.75rem 0 1.25rem;
+}
+
+.about-profile-header::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 .about-profile-name {
@@ -444,6 +446,7 @@ a:hover {
 
 .about-profile-name strong {
     color: inherit;
+    display: block;
 }
 
 .about-profile-summary {
@@ -452,9 +455,10 @@ a:hover {
 }
 
 .post-content img.about-profile-image {
+    float: right;
     width: min(152px, 28vw);
     max-width: 100%;
-    margin: 0 0 0 auto;
+    margin: 0.1rem 0 0.7rem 1.4rem;
     border-radius: 12px;
     border: none;
     object-fit: cover;
@@ -875,19 +879,13 @@ table {
         padding: 16px 14px;
     }
 
-    .about-profile-header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 12px;
-    }
-
     .about-profile-name {
-        width: 100%;
+        min-width: 0;
     }
 
     .post-content img.about-profile-image {
-        width: min(136px, 42vw);
-        margin-left: 0;
+        width: min(112px, 30vw);
+        margin: 0.05rem 0 0.55rem 0.9rem;
     }
 
     .about-timeline-header {
