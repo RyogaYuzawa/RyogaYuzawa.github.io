@@ -205,9 +205,9 @@ iframe.embedly-card {
 
 .external-link-card__thumb-inner--overlay {
   align-items: flex-start;
-  justify-content: flex-end;
-  gap: 8px;
-  padding: 14px;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 14px 16px 10px;
 }
 
 .external-link-card__thumb-badge {

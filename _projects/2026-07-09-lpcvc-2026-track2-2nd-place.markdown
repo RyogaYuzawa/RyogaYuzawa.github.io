@@ -13,7 +13,7 @@ summary: "This project note records our 2nd place result in the Action Recogniti
 ---
 
 ## Overview
-This project note records our result in the 2026 IEEE Low Power Computer Vision Challenge (LPCVC).
+This project note records our result in the 2026 IEEE Low Power Computer Vision Challenge (LPCVC), held as part of the Efficient Deep Learning for Computer Vision workshop at CVPR 2026.
 
 In the **Action Recognition in Video** track, our team **TEAM-ALPHA** placed **2nd**. The submitted model was evaluated on the Qualcomm Dragonwing IQ-9075 EVK through Qualcomm AI Hub.
 
