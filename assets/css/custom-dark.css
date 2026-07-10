@@ -414,6 +414,38 @@ a:hover {
     color: var(--text-muted);
 }
 
+.about-inline-list {
+    margin: 0.9rem 0 1.6rem;
+}
+
+.about-inline-item {
+    margin-bottom: 0.75rem;
+}
+
+.about-inline-detail {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.about-inline-title {
+    min-width: 0;
+    color: var(--text-muted);
+}
+
+.about-inline-period {
+    flex-shrink: 0;
+    color: var(--text-muted);
+    text-align: right;
+    white-space: nowrap;
+}
+
+.about-inline-note {
+    margin-top: 0.16rem;
+    color: var(--text-muted);
+}
+
 blockquote {
     margin: 24px 0 !important;
     padding: 18px 20px !important;
@@ -434,6 +466,16 @@ table {
     }
 
     .about-timeline-period {
+        text-align: left;
+    }
+
+    .about-inline-detail {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+
+    .about-inline-period {
         text-align: left;
     }
 }

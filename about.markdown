@@ -53,32 +53,35 @@ permalink: /about/
 
 ## Awards
 
-- **2nd Place**, CVPR 2026 Low Power Computer Vision Challenge (LPCVC), Action Recognition in Video, May 2026
-  Achieved 96.77% accuracy at 19 ms latency on Qualcomm Dragonwing IQ-9075 EVK with a ViT-based model using layer conversion and knowledge distillation.
-- **1st Place**, The University of Tokyo FPGA AI Design Hackathon, Jun. 2025
-  Achieved 340 FPS on an end-to-end camera recognition pipeline on AMD Kria KV260, implementing CenterNet on DPU IP with hardware, software, and AI co-optimization.
+**2nd Place**, CVPR 2026 Low Power Computer Vision Challenge (LPCVC), Action Recognition in Video, May 2026  
+Achieved 96.77% accuracy at 19 ms latency on Qualcomm Dragonwing IQ-9075 EVK with a ViT-based model using layer conversion and knowledge distillation.
+
+**1st Place**, The University of Tokyo FPGA AI Design Hackathon, Jun. 2025  
+Achieved 340 FPS on an end-to-end camera recognition pipeline on AMD Kria KV260, implementing CenterNet on DPU IP with hardware, software, and AI co-optimization.
 
 ## Patents
 
-<div class="about-timeline">
-  <div class="about-timeline-item">
-    <div class="about-timeline-detail">
-      <div class="about-timeline-role"><strong>Subject recognition method for cameras</strong></div>
+<div class="about-inline-list">
+  <div class="about-inline-item">
+    <div class="about-inline-detail">
+      <div class="about-inline-title"><strong>Subject recognition method for cameras</strong></div>
     </div>
   </div>
-  <div class="about-timeline-item">
-    <div class="about-timeline-detail">
-      <div class="about-timeline-role"><strong>Information processing device and information processing method</strong></div>
-      <span class="about-timeline-period">Nov. 2024</span>
+
+  <div class="about-inline-item">
+    <div class="about-inline-detail">
+      <div class="about-inline-title"><strong>Information processing device and information processing method</strong></div>
+      <span class="about-inline-period">Nov. 2024</span>
     </div>
-    <div class="about-timeline-note">WO2024232254A1, pending. Assignee: Sony Group Corp.</div>
+    <div class="about-inline-note">WO2024232254A1, pending. Assignee: Sony Group Corp.</div>
   </div>
-  <div class="about-timeline-item">
-    <div class="about-timeline-detail">
-      <div class="about-timeline-role"><strong>Transmission Line, Wiring Board, and High-Frequency Device &amp; Design Method</strong></div>
-      <span class="about-timeline-period">May 2020</span>
+
+  <div class="about-inline-item">
+    <div class="about-inline-detail">
+      <div class="about-inline-title"><strong>Transmission Line, Wiring Board, and High-Frequency Device &amp; Design Method</strong></div>
+      <span class="about-inline-period">May 2020</span>
     </div>
-    <div class="about-timeline-note">JP6693655B2, granted.</div>
+    <div class="about-inline-note">JP6693655B2, granted.</div>
   </div>
 </div>
 
