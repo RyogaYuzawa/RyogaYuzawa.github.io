@@ -14,20 +14,20 @@ permalink: /about/
   <div class="about-timeline-item">
     <div class="about-timeline-org"><strong>UC Berkeley</strong></div>
     <div class="about-timeline-detail">
-      <div class="about-timeline-role">Visiting Researcher - Mechanical Systems Control Lab (Berkeley AI Research)</div>
+      <div class="about-timeline-role">Visiting Researcher &mdash; Mechanical Systems Control Lab (Berkeley AI Research)</div>
       <span class="about-timeline-period">Aug. 2025 - Present</span>
     </div>
   </div>
   <div class="about-timeline-item">
     <div class="about-timeline-org"><strong>Sony</strong></div>
     <div class="about-timeline-detail">
-      <div class="about-timeline-role">AI / ML Engineer - Camera Embedded AI</div>
+      <div class="about-timeline-role">AI / ML Engineer &mdash; Camera Embedded AI</div>
       <span class="about-timeline-period">Apr. 2023 - Aug. 2025</span>
     </div>
   </div>
   <div class="about-timeline-item">
     <div class="about-timeline-detail">
-      <div class="about-timeline-role">Hardware Design Engineer - Display Interface</div>
+      <div class="about-timeline-role">Hardware Design Engineer &mdash; Display Interface</div>
       <span class="about-timeline-period">Apr. 2020 - Mar. 2023</span>
     </div>
   </div>
