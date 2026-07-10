@@ -1,27 +1,33 @@
 {%- assign raw_url = include.url -%}
 {%- assign normalized_url = raw_url | remove: "https://" | remove: "http://" -%}
 {%- assign hostname = normalized_url | split: "/" | first -%}
+{%- assign domain_name = hostname | split: "." | first -%}
+{%- assign domain_mark = domain_name | slice: 0, 3 | upcase -%}
 {%- assign display_title = include.label | default: normalized_url -%}
 {%- if display_title == "Link" or display_title == "link" -%}
   {%- assign display_title = normalized_url -%}
 {%- endif -%}
 {%- assign favicon_url = "https://www.google.com/s2/favicons?sz=128&domain_url=" | append: raw_url -%}
 
-<a href="{{ raw_url }}" class="external-link-card" target="_blank" rel="noopener noreferrer">
+<a href="{{ raw_url }}" class="external-link-card" target="_blank" rel="noopener noreferrer" data-url="{{ raw_url }}" data-hostname="{{ hostname }}">
   <span class="external-link-card__body">
     <span class="external-link-card__eyebrow">External Link</span>
     <span class="external-link-card__title">{{ display_title }}</span>
     <span class="external-link-card__subtitle">{{ hostname }}</span>
   </span>
   <span class="external-link-card__thumb">
+    <span class="external-link-card__mark" aria-hidden="true">{{ domain_mark }}</span>
     <span class="external-link-card__thumb-inner">
-      <img
-        src="{{ favicon_url }}"
-        alt="{{ hostname }}"
-        class="external-link-card__favicon"
-        loading="lazy"
-      >
-      <span class="external-link-card__host">{{ hostname }}</span>
+      <span class="external-link-card__thumb-badge">{{ domain_name }}</span>
+      <span class="external-link-card__thumb-brand">
+        <img
+          src="{{ favicon_url }}"
+          alt="{{ hostname }}"
+          class="external-link-card__favicon"
+          loading="lazy"
+        >
+        <span class="external-link-card__host">{{ hostname }}</span>
+      </span>
     </span>
   </span>
 </a>
