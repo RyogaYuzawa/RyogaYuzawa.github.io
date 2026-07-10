@@ -78,6 +78,8 @@ body {
     border-radius: 999px;
     font-size: 0.94rem;
     font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
     transition: background-color 0.2s ease, color 0.2s ease;
 }
 

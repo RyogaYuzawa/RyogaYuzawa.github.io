@@ -28,6 +28,91 @@ iframe.embedly-card {
   display: block;
 }
 
+.github-repo-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 320px);
+  align-items: stretch;
+  max-width: 1000px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 18px;
+  overflow: hidden;
+  background: linear-gradient(180deg, #f6f6f2 0%, #efefe9 100%);
+  box-shadow: 0 16px 40px rgba(17, 17, 17, 0.08);
+  text-decoration: none;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.github-repo-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(17, 17, 17, 0.18);
+  box-shadow: 0 22px 50px rgba(17, 17, 17, 0.12);
+  text-decoration: none;
+}
+
+.github-repo-card__thumb {
+  position: relative;
+  min-height: 132px;
+  background: linear-gradient(135deg, #191919 0%, #313131 100%);
+  order: 2;
+}
+
+.github-repo-card__image {
+  width: 100%;
+  height: 100%;
+  min-height: 132px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.github-repo-card__body {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  padding: 18px 22px;
+  order: 1;
+}
+
+.github-repo-card__eyebrow {
+  color: #63635d;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.github-repo-card__title {
+  color: #111111;
+  font-size: 1.08rem;
+  font-weight: 700;
+  line-height: 1.35;
+  word-break: break-word;
+}
+
+.github-repo-card__subtitle {
+  color: #5f5f5a;
+  font-size: 0.92rem;
+  line-height: 1.4;
+}
+
+@media (max-width: 760px) {
+  .github-repo-card {
+    grid-template-columns: 1fr;
+  }
+
+  .github-repo-card__thumb,
+  .github-repo-card__body {
+    order: initial;
+  }
+
+  .github-repo-card__thumb,
+  .github-repo-card__image {
+    min-height: 116px;
+  }
+}
+
 
 /* Prism.jsのシンタックスハイライトによる四角い枠を削除 */
 .token {

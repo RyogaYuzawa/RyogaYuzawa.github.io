@@ -1,0 +1,17 @@
+<a href="{{ include.url }}" class="github-repo-card" target="_blank" rel="noopener noreferrer">
+  <span class="github-repo-card__thumb">
+    <img
+      src="{{ include.image }}"
+      alt="{{ include.title | default: include.url }}"
+      class="github-repo-card__image"
+      loading="lazy"
+    >
+  </span>
+  <span class="github-repo-card__body">
+    <span class="github-repo-card__eyebrow">{{ include.label | default: "GitHub" }}</span>
+    <span class="github-repo-card__title">{{ include.title }}</span>
+    {%- if include.subtitle -%}
+    <span class="github-repo-card__subtitle">{{ include.subtitle }}</span>
+    {%- endif -%}
+  </span>
+</a>

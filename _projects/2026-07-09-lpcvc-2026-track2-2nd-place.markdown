@@ -28,7 +28,13 @@ Reference:
 ## Public Code
 The implementation has been published here:
 
-- [tasuku-takagi/LPCVC_2026_Track2_team-alpha](https://github.com/tasuku-takagi/LPCVC_2026_Track2_team-alpha)
+{% include github-repo-card.html
+  url="https://github.com/tasuku-takagi/LPCVC_2026_Track2_team-alpha"
+  image="https://opengraph.githubassets.com/lpcvc2026/tasuku-takagi/LPCVC_2026_Track2_team-alpha"
+  label="Public Code"
+  title="LPCVC_2026_Track2_team-alpha"
+  subtitle="tasuku-takagi"
+%}
 
 ## Competition
 This result was achieved in the following track:
