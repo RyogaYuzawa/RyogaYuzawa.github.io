@@ -71,7 +71,7 @@ permalink: /about/
 <div class="about-inline-list">
   <div class="about-inline-item">
     <div class="about-inline-detail">
-      <div class="about-inline-title"><strong>2nd Place</strong> &mdash; CVPR 2026 Low Power Computer Vision Challenge (LPCVC), Action Recognition in Video</div>
+      <div class="about-inline-title"><strong>2nd Place</strong> &mdash; CVPR 2026 Workshop, IEEE Low Power Computer Vision Challenge (LPCVC), Action Recognition in Video</div>
       <span class="about-inline-period">May 2026</span>
     </div>
     <div class="about-inline-note">Achieved 96.77% accuracy at 19 ms latency on Qualcomm Dragonwing IQ-9075 EVK with a ViT-based model using layer conversion and knowledge distillation.</div>
@@ -79,7 +79,7 @@ permalink: /about/
 
   <div class="about-inline-item">
     <div class="about-inline-detail">
-      <div class="about-inline-title"><strong>1st Place</strong> &mdash; The University of Tokyo FPGA AI Design Hackathon</div>
+      <div class="about-inline-title"><strong>1st Place</strong> &mdash; The University of Tokyo, Agile-X Project: FPGA AI Design Hackathon</div>
       <span class="about-inline-period">Jun. 2025</span>
     </div>
     <div class="about-inline-note">Achieved 340 FPS on an end-to-end camera recognition pipeline on AMD Kria KV260, implementing CenterNet on DPU IP with hardware, software, and AI co-optimization.</div>
