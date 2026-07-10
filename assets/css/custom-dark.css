@@ -709,52 +709,6 @@ table {
         font-size: 0.78rem;
     }
 
-    .post-content h3 + *,
-    .post-content h3 + * + *,
-    .post-content h3 + * + * + *,
-    .post-content h3 + * + * + * + *,
-    .post-content h3 + * + * + * + * + *,
-    .post-content h4 + *,
-    .post-content h4 + * + *,
-    .post-content h4 + * + * + *,
-    .post-content h4 + * + * + * + *,
-    .post-content h4 + * + * + * + * + *,
-    .post-content h5 + *,
-    .post-content h5 + * + *,
-    .post-content h5 + * + * + *,
-    .post-content h5 + * + * + * + *,
-    .post-content h5 + * + * + * + * + *,
-    .post-content h6 + *,
-    .post-content h6 + * + *,
-    .post-content h6 + * + * + *,
-    .post-content h6 + * + * + * + *,
-    .post-content h6 + * + * + * + * + *,
-    .post-content h3 ~ *:not(h2):not(h3):not(h4):not(h5):not(h6),
-    .post-content h4 ~ *:not(h2):not(h3):not(h4):not(h5):not(h6),
-    .post-content h5 ~ *:not(h2):not(h3):not(h4):not(h5):not(h6),
-    .post-content h6 ~ *:not(h2):not(h3):not(h4):not(h5):not(h6) {
-        margin-left: 0 !important;
-    }
-
-    .post-content h3 ~ ul,
-    .post-content h3 ~ ol,
-    .post-content h3 ~ pre,
-    .post-content h3 ~ code,
-    .post-content h4 ~ ul,
-    .post-content h4 ~ ol,
-    .post-content h4 ~ pre,
-    .post-content h4 ~ code,
-    .post-content h5 ~ ul,
-    .post-content h5 ~ ol,
-    .post-content h5 ~ pre,
-    .post-content h5 ~ code,
-    .post-content h6 ~ ul,
-    .post-content h6 ~ ol,
-    .post-content h6 ~ pre,
-    .post-content h6 ~ code {
-        margin-left: 0 !important;
-    }
-
     .post-content h4,
     .post-content h5,
     .post-content h6 {
