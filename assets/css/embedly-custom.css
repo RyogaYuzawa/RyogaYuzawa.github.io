@@ -366,9 +366,9 @@ code {
 
 /* インラインコードは本文と馴染む黒の通常書体にする */
 :not(pre) > code {
-  font-family: "Times New Roman", Times, serif !important;
-  font-size: 1em !important;
-  font-style: italic !important;
+  font-family: Consolas, "Liberation Mono", Menlo, Monaco, monospace !important;
+  font-size: 0.94em !important;
+  font-style: normal !important;
   color: #111111 !important;
   background: #ecece6 !important;
   padding: 0.12em 0.38em !important;
