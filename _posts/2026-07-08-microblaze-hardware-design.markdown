@@ -40,7 +40,7 @@ MicroBlaze Processor Reference:
 ### Hardware Construction
 Build the hardware in Vivado:
 
-- `Create Project -> Create Block Design`
+- `Create Project → Create Block Design`
 - Add the `MicroBlaze` IP
   - Select `Microcontroller`
   - Configure `Local Memory`
@@ -59,7 +59,7 @@ Additional setup:
 - Add a GPIO IP and use it as an `ALL Output [2:0]`, 1-channel configuration
 - Rename the I/O signal names to match the constraints file
 - Finally, because an error appears otherwise, place the Zynq PS block as well
-- Run `Validate Design -> Create HDL Wrapper -> Generate Bitstream`
+- Run `Validate Design → Create HDL Wrapper → Generate Bitstream`
 
 **Final block design**
 
@@ -87,7 +87,7 @@ The register addresses for GPIO, BRAM, and MDM can be confirmed here:
 - Create a platform project using the `.xsa` file generated during hardware construction
 - Choose `Hello World` as the application
 - Build the project
-- Run `Debug As -> Launch Hardware`
+- Run `Debug As → Launch Hardware`
 
 ![Launching hardware from Vitis](/assets/media/posts/microblaze-hardware-design/vitis-launch-hardware.png)
 
@@ -98,7 +98,7 @@ MicroBlaze output is checked in the console through UART rather than through a n
 ## Running an LED Control Program
 Next, recreate the application project, control GPIO from MicroBlaze, and light the LEDs.
 
-Import `LED_test.c` through `Source -> Build Project`.
+Import `LED_test.c` through `Source → Build Project`.
 
 The code is based on the following publisher-provided reference:
 <https://www.shuwasystem.co.jp/support/7980html/6326.html>
@@ -152,7 +152,7 @@ From `xparameters.h`, we can see that `XPAR_GPIO_0_BASEADDR` reserves a 16-bit r
 
 In operation, the `while` loop drives the 3-bit GPIO that corresponds to the three RGB LED outputs in the following order:
 
-`(100) -> (010) -> (001) -> (111) -> (000)`
+`(100) → (010) → (001) → (111) → (000)`
 
 The pattern changes once every `j < 40000000` delay loop.
 

@@ -33,7 +33,7 @@ Create a circuit that displays characters on a monitor through HDMI.
 ## Implementation
 
 ### Project Creation
-- `Project Creation -> Create and Package New IP`
+- `Project Creation → Create and Package New IP`
 - `Package a Specified Directory`
 - Select the `chardisp_ip` directory from the appendix and click `Finish`
 
@@ -59,7 +59,7 @@ At this stage, VRAM and CGROM are still missing.
 
 Check the summary and click OK.
 
-- Run `Out of Context per IP -> Generate` to create the VRAM block.
+- Run `Out of Context per IP → Generate` to create the VRAM block.
 
 ### Generating CGROM
 - Add the `Block Memory Generator` IP

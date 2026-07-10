@@ -33,10 +33,10 @@ Reference:
 
 ### Hardware Construction
 - Create an empty project in Vivado
-- `Create Block Design -> Add IP` and add the Zynq PS
+- `Create Block Design → Add IP` and add the Zynq PS
 - Add `AXI GPIO`, switch it to a 2-channel configuration, and set:
-  - Output -> `LED_RGB[2:0]`
-  - Input -> `BTN[1:0]`
+  - Output → `LED_RGB[2:0]`
+  - Input → `BTN[1:0]`
 - Run `Connection Automation` so that `System Reset` and `AXI Interconnect` are added automatically
 - Rename the ports to match the constraints file
 - Run `Validate Design`

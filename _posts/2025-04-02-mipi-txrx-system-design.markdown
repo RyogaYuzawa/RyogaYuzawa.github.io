@@ -63,7 +63,7 @@ MIPI CSI-2 is a differential signaling interface mainly used for image sensors a
 - Launch Vitis.
 - Create an Application by selecting the generated XSA file as the platform.
 - Choose an Empty Application and click Finish.
-- Open platform.spr and navigate to Board Support Package -> Drivers.
+- Open platform.spr and navigate to Board Support Package → Drivers.
 - Import examples for csirx_0 / mipiciss by checking the sp701 folder and clicking OK.
 
 ![](/assets/media/posts/mipi-txrx-system-design/vitis-driver-import.png)
@@ -71,7 +71,7 @@ MIPI CSI-2 is a differential signaling interface mainly used for image sensors a
 
 - Multiple files, including xmipi_sp701_example.c, will be imported.
 - For actual usage, right-click the project and build it.
-- Launch the hardware debug session by selecting Run As / Debug As -> Launch Hardware.
+- Launch the hardware debug session by selecting Run As / Debug As → Launch Hardware.
 
 ## Hardware Block
 

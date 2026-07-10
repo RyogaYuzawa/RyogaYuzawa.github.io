@@ -27,9 +27,9 @@ Create a custom IP block with Vivado and integrate it into a circuit design.
 ## Implementation
 
 ### Adding a New IP
-- `Tools -> Create and Package New IP`
+- `Tools → Create and Package New IP`
 - `Create a New AXI4 Peripheral`
-- `Next Steps: Edit IP -> Finish`
+- `Next Steps: Edit IP → Finish`
 
 ![Create and Package New IP flow](/assets/media/posts/vivado-custom-ip-design/create-and-package-new-ip.png)
 
@@ -161,7 +161,7 @@ After that, when `slv_reg_rden` goes high, `reg_data_out` is transferred into `a
 
 Then run the following packaging flow:
 
-`Package IP -> Packaging Steps -> File Group -> Merge changes from File Group Wizard -> Re-Package IP`
+`Package IP → Packaging Steps → File Group → Merge changes from File Group Wizard → Re-Package IP`
 
 ![Re-package IP flow](/assets/media/posts/vivado-custom-ip-design/repackage-ip.png)
 
