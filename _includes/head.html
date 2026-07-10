@@ -33,20 +33,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
 
+    {%- assign asset_version = site.time | date: "%s" -%}
+
     <!-- Minima Theme CSS -->
     <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
   
     <!-- Custom theme -->
-    <link rel="stylesheet" href="{{ '/assets/css/custom-dark.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/custom-dark.css' | relative_url }}?v={{ asset_version }}">
   
     <!-- Prism.js VSCode Dark CSS -->
-    <link rel="stylesheet" href="{{ '/assets/css/prism-vsc-dark-plus.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/prism-vsc-dark-plus.css' | relative_url }}?v={{ asset_version }}">
 
     <!-- 見出し階層インデントCSS -->
-    <link rel="stylesheet" href="{{ '/css/post-headings.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/css/post-headings.css' | relative_url }}?v={{ asset_version }}">
 
     <!-- Social Share Buttons CSS -->
-    <link rel="stylesheet" href="{{ '/assets/css/social-share.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/social-share.css' | relative_url }}?v={{ asset_version }}">
 
     <!-- Prism.js core -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
@@ -70,7 +72,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-verilog.min.js"></script>
     <!-- Embedly Cards -->
     <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
-    <link rel="stylesheet" href="{{ '/assets/css/embedly-custom.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/embedly-custom.css' | relative_url }}?v={{ asset_version }}">
 
     <!-- Setting MathJax -->
     <script>

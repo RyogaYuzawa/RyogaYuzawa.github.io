@@ -34,5 +34,6 @@
 
 </footer>
 
-<script src="{{ '/assets/js/mobile-header.js' | relative_url }}"></script>
-<script src="{{ '/assets/js/external-link-card.js' | relative_url }}"></script>
+{%- assign asset_version = site.time | date: "%s" -%}
+<script src="{{ '/assets/js/mobile-header.js' | relative_url }}?v={{ asset_version }}"></script>
+<script src="{{ '/assets/js/external-link-card.js' | relative_url }}?v={{ asset_version }}"></script>
