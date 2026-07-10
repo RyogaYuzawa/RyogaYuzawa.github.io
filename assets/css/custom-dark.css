@@ -743,7 +743,7 @@ hr {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 600px) and (hover: none), (max-width: 600px) and (pointer: coarse) {
     .page-content {
         padding-top: 20px !important;
     }
