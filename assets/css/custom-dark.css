@@ -212,6 +212,16 @@ body {
     gap: 24px;
 }
 
+.page-section-heading {
+    margin-bottom: 6px;
+}
+
+.page-section-heading .post-list-heading {
+    color: var(--text-muted) !important;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
 .post-list-heading {
     margin: 0;
     color: var(--text) !important;

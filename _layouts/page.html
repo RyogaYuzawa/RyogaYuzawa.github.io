@@ -3,10 +3,16 @@ layout: default
 ---
 <article class="post">
 
+  {%- if page.simple_page_title -%}
+  <div class="section-heading page-section-heading">
+    <h2 class="post-list-heading">{{ page.title | escape }}</h2>
+  </div>
+  {%- else -%}
   <header class="post-header">
     <p class="eyebrow">Page</p>
     <h1 class="post-title">{{ page.title | escape }}</h1>
   </header>
+  {%- endif -%}
 
   <div class="post-content">
     {{ content }}

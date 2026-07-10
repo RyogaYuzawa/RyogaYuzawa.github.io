@@ -2,6 +2,7 @@
 layout: page
 title: About
 permalink: /about/
+simple_page_title: true
 ---
 
 ## Profile

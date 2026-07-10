@@ -13,7 +13,7 @@ layout: default
   {%- endif -%}
 
   {%- if entries.size > 0 -%}
-    <div class="section-heading">
+    <div class="section-heading{% if page.centered_page_title %} page-section-heading{% endif %}">
       <h2 class="post-list-heading">{{ page.list_title | default: "Latest Posts" }}</h2>
     </div>
     <ul class="post-list">
