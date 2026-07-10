@@ -7,7 +7,7 @@
         {%- for path in site.header_pages -%}
           {%- assign page_path = site.pages | where: "path", path | first -%}
           {%- if page_path and page_path.title -%}
-            <a class="page-link" href="{{ page_path.url | relative_url }}">{{ page_path.title | escape }}</a>
+            <a class="page-link" href="{{ page_path.url | relative_url }}">{{ page_path.nav_title | default: page_path.title | escape }}</a>
           {%- endif -%}
         {%- endfor -%}
       </nav>
