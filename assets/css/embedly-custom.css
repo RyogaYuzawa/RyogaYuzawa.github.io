@@ -33,26 +33,26 @@ iframe.embedly-card {
   grid-template-columns: minmax(0, 1fr) minmax(0, 320px);
   align-items: stretch;
   max-width: 1000px;
-  border: 1px solid rgba(17, 17, 17, 0.1);
+  border: 1px solid rgba(17, 17, 17, 0.07);
   border-radius: 18px;
   overflow: hidden;
-  background: linear-gradient(180deg, #f6f6f2 0%, #efefe9 100%);
-  box-shadow: 0 16px 40px rgba(17, 17, 17, 0.08);
+  background: linear-gradient(180deg, #ffffff 0%, #f8f8f5 100%);
+  box-shadow: 0 14px 34px rgba(17, 17, 17, 0.045);
   text-decoration: none;
   transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
 }
 
 .github-repo-card:hover {
   transform: translateY(-2px);
-  border-color: rgba(17, 17, 17, 0.18);
-  box-shadow: 0 22px 50px rgba(17, 17, 17, 0.12);
+  border-color: rgba(17, 17, 17, 0.12);
+  box-shadow: 0 18px 42px rgba(17, 17, 17, 0.07);
   text-decoration: none;
 }
 
 .github-repo-card__thumb {
   position: relative;
   min-height: 132px;
-  background: linear-gradient(135deg, #191919 0%, #313131 100%);
+  background: linear-gradient(135deg, #f1f1ec 0%, #e5e5dc 100%);
   order: 2;
 }
 
@@ -102,19 +102,19 @@ iframe.embedly-card {
   grid-template-columns: minmax(0, 1fr) minmax(0, 320px);
   align-items: stretch;
   max-width: 1000px;
-  border: 1px solid rgba(17, 17, 17, 0.1);
+  border: 1px solid rgba(17, 17, 17, 0.07);
   border-radius: 18px;
   overflow: hidden;
-  background: linear-gradient(180deg, #f6f6f2 0%, #efefe9 100%);
-  box-shadow: 0 16px 40px rgba(17, 17, 17, 0.08);
+  background: linear-gradient(180deg, #ffffff 0%, #f8f8f5 100%);
+  box-shadow: 0 14px 34px rgba(17, 17, 17, 0.045);
   text-decoration: none;
   transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
 }
 
 .external-link-card:hover {
   transform: translateY(-2px);
-  border-color: rgba(17, 17, 17, 0.18);
-  box-shadow: 0 22px 50px rgba(17, 17, 17, 0.12);
+  border-color: rgba(17, 17, 17, 0.12);
+  box-shadow: 0 18px 42px rgba(17, 17, 17, 0.07);
   text-decoration: none;
 }
 
@@ -157,8 +157,8 @@ iframe.embedly-card {
   position: relative;
   height: 132px;
   background:
-    radial-gradient(circle at 24% 20%, rgba(255, 255, 255, 0.96), rgba(255, 255, 255, 0.28) 30%, transparent 31%),
-    linear-gradient(135deg, #ecece6 0%, #ddddd4 100%);
+    radial-gradient(circle at 24% 20%, rgba(255, 255, 255, 0.98), rgba(255, 255, 255, 0.42) 30%, transparent 31%),
+    linear-gradient(135deg, #f3f3ee 0%, #e8e8df 100%);
   overflow: hidden;
 }
 
@@ -216,8 +216,8 @@ iframe.embedly-card {
   align-items: center;
   padding: 5px 10px;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.76);
-  border: 1px solid rgba(17, 17, 17, 0.08);
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(17, 17, 17, 0.06);
   color: #5a5a54;
   font-size: 0.72rem;
   font-weight: 700;
