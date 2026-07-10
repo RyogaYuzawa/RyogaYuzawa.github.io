@@ -130,7 +130,7 @@ simple_page_title: true
     <div class="about-inline-detail">
       <div class="about-inline-title"><strong>TOEIC</strong></div>
     </div>
-    <div class="about-inline-note">Score: 920 &mdash; Mar. 2024</div>
+    <div class="about-inline-note">Score: 920 &mdash; Mar. 2023</div>
   </div>
 
   <div class="about-inline-item">
