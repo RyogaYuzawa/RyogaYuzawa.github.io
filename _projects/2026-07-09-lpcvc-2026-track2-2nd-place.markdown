@@ -6,7 +6,7 @@ date: 2026-07-09
 author: Ryoga Yuzawa
 categories: [Project, Competition, Computer Vision]
 tags: [LPCVC, Action Recognition, Video Recognition, Edge AI, Competition]
-image: /assets/media/projects/lpcvc-2026-track2-2nd-place/qualcomm-dragonwing-chip.jpg
+image: /assets/media/projects/lpcvc-2026-track2-2nd-place/award-certificate.jpg
 description: "A short note on receiving 2nd place in the Action Recognition in Video track at LPCVC 2026."
 keywords: "LPCVC 2026, action recognition, video recognition, edge AI, competition"
 summary: "This project note records our result in the 2026 IEEE Low Power Computer Vision Challenge (LPCVC), held as part of the Efficient Deep Learning for Computer Vision workshop at Computer Vision and Pattern Recognition (CVPR) 2026."
