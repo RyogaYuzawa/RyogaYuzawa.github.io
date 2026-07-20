@@ -29,8 +29,9 @@ In the **Action Recognition in Video** track, our team **TEAM-ALPHA** placed **2
 
 The submitted model was evaluated on the Qualcomm Dragonwing IQ-9075 EVK through Qualcomm AI Hub.
 
-<div class="content-image-right-wrap">
-  <img src="/assets/media/projects/lpcvc-2026-track2-2nd-place/qualcomm-dragonwing-chip.jpg" alt="Qualcomm Dragonwing chip" class="content-image-right">
+<div class="content-image-right dragonwing-credit-image">
+  <img src="/assets/media/projects/lpcvc-2026-track2-2nd-place/qualcomm-dragonwing-chip.jpg" alt="Qualcomm Dragonwing chip" loading="lazy">
+  <span class="image-credit">Credit: Qualcomm</span>
 </div>
 
 - **Model**: DecomposedVideoMAE (ViT-B, 112px, float)

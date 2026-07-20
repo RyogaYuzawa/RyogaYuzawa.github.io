@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1030" viewBox="0 0 1600 1030">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="24" y="34" font-family="monospace" font-size="22" font-weight="bold">R5CD Pipeline Timeline — frames 150–153</text>
+<line x1="165.0" y1="58" x2="165.0" y2="574" stroke="#dddddd" stroke-width="1"/>
+<text x="165.0" y="52" text-anchor="middle" font-family="monospace" font-size="14" fill="#333333">0.0 ms</text>
+<line x1="305.0" y1="58" x2="305.0" y2="574" stroke="#dddddd" stroke-width="1"/>
+<text x="305.0" y="52" text-anchor="middle" font-family="monospace" font-size="14" fill="#333333">17.5 ms</text>
+<line x1="445.0" y1="58" x2="445.0" y2="574" stroke="#dddddd" stroke-width="1"/>
+<text x="445.0" y="52" text-anchor="middle" font-family="monospace" font-size="14" fill="#333333">35.0 ms</text>
+<line x1="585.0" y1="58" x2="585.0" y2="574" stroke="#dddddd" stroke-width="1"/>
+<text x="585.0" y="52" text-anchor="middle" font-family="monospace" font-size="14" fill="#333333">52.5 ms</text>
+<line x1="725.0" y1="58" x2="725.0" y2="574" stroke="#dddddd" stroke-width="1"/>
+<text x="725.0" y="52" text-anchor="middle" font-family="monospace" font-size="14" fill="#333333">70.0 ms</text>
+<line x1="865.0" y1="58" x2="865.0" y2="574" stroke="#dddddd" stroke-width="1"/>
+<text x="865.0" y="52" text-anchor="middle" font-family="monospace" font-size="14" fill="#333333">87.6 ms</text>
+<line x1="1005.0" y1="58" x2="1005.0" y2="574" stroke="#dddddd" stroke-width="1"/>
+<text x="1005.0" y="52" text-anchor="middle" font-family="monospace" font-size="14" fill="#333333">105.1 ms</text>
+<line x1="1145.0" y1="58" x2="1145.0" y2="574" stroke="#dddddd" stroke-width="1"/>
+<text x="1145.0" y="52" text-anchor="middle" font-family="monospace" font-size="14" fill="#333333">122.6 ms</text>
+<line x1="1285.0" y1="58" x2="1285.0" y2="574" stroke="#dddddd" stroke-width="1"/>
+<text x="1285.0" y="52" text-anchor="middle" font-family="monospace" font-size="14" fill="#333333">140.1 ms</text>
+<line x1="1425.0" y1="58" x2="1425.0" y2="574" stroke="#dddddd" stroke-width="1"/>
+<text x="1425.0" y="52" text-anchor="middle" font-family="monospace" font-size="14" fill="#333333">157.6 ms</text>
+<line x1="1565.0" y1="58" x2="1565.0" y2="574" stroke="#dddddd" stroke-width="1"/>
+<text x="1565.0" y="52" text-anchor="middle" font-family="monospace" font-size="14" fill="#333333">175.1 ms</text>
+<text x="153" y="117" text-anchor="end" font-family="monospace" font-size="15">camera_isp_buffer_wait</text>
+<line x1="165" y1="158" x2="1565" y2="158" stroke="#eeeeee"/>
+<text x="153" y="185" text-anchor="end" font-family="monospace" font-size="15">camera_dequeue</text>
+<line x1="165" y1="226" x2="1565" y2="226" stroke="#eeeeee"/>
+<text x="153" y="253" text-anchor="end" font-family="monospace" font-size="15">camera_map</text>
+<line x1="165" y1="294" x2="1565" y2="294" stroke="#eeeeee"/>
+<rect x="12" y="228" width="1576" height="50" rx="5" fill="none" stroke="#dc2626" stroke-width="1.5"/>
+<text x="153" y="321" text-anchor="end" font-family="monospace" font-size="15">preprocess</text>
+<line x1="165" y1="362" x2="1565" y2="362" stroke="#eeeeee"/>
+<text x="153" y="389" text-anchor="end" font-family="monospace" font-size="15">dpu</text>
+<line x1="165" y1="430" x2="1565" y2="430" stroke="#eeeeee"/>
+<text x="153" y="457" text-anchor="end" font-family="monospace" font-size="15">postprocess</text>
+<line x1="165" y1="498" x2="1565" y2="498" stroke="#eeeeee"/>
+<text x="153" y="525" text-anchor="end" font-family="monospace" font-size="15">rpmsg</text>
+<line x1="165" y1="566" x2="1565" y2="566" stroke="#eeeeee"/>
+<rect x="165.00" y="98" width="195.91" height="30" rx="3" fill="#2f5597" stroke="#222222" stroke-width="0.4"><title>frame 150 | camera_isp_buffer_wait | 24.506 ms</title></rect>
+<text x="262.96" y="91" text-anchor="middle" font-family="monospace" font-size="13" fill="#222222">F150 24.51 ms</text>
+<rect x="360.91" y="166" width="1.00" height="30" rx="3" fill="#76b7b2" stroke="#222222" stroke-width="0.4"><title>frame 150 | camera_dequeue | 0.021 ms</title></rect>
+<rect x="361.10" y="234" width="1.00" height="30" rx="3" fill="#9c755f" stroke="#222222" stroke-width="0.4"><title>frame 150 | camera_map | 0.064 ms</title></rect>
+<rect x="361.96" y="302" width="63.74" height="30" rx="3" fill="#59a14f" stroke="#222222" stroke-width="0.4"><title>frame 150 | preprocess | 7.973 ms</title></rect>
+<text x="393.83" y="295" text-anchor="middle" font-family="monospace" font-size="13" fill="#222222">F150 7.97 ms</text>
+<rect x="429.47" y="370" width="263.04" height="30" rx="3" fill="#e15759" stroke="#222222" stroke-width="0.4"><title>frame 150 | dpu | 32.903 ms</title></rect>
+<text x="560.99" y="363" text-anchor="middle" font-family="monospace" font-size="13" fill="#222222">F150 32.90 ms</text>
+<rect x="692.51" y="438" width="2.33" height="30" rx="3" fill="#f28e2b" stroke="#222222" stroke-width="0.4"><title>frame 150 | postprocess | 0.292 ms</title></rect>
+<rect x="694.85" y="506" width="1.00" height="30" rx="3" fill="#b07aa1" stroke="#222222" stroke-width="0.4"><title>frame 150 | rpmsg | 0.087 ms</title></rect>
+<rect x="431.50" y="98" width="196.58" height="30" rx="3" fill="#2f5597" stroke="#222222" stroke-width="0.4"><title>frame 151 | camera_isp_buffer_wait | 24.590 ms</title></rect>
+<text x="529.79" y="91" text-anchor="middle" font-family="monospace" font-size="13" fill="#222222">F151 24.59 ms</text>
+<rect x="628.08" y="166" width="1.00" height="30" rx="3" fill="#76b7b2" stroke="#222222" stroke-width="0.4"><title>frame 151 | camera_dequeue | 0.021 ms</title></rect>
+<rect x="628.28" y="234" width="1.00" height="30" rx="3" fill="#9c755f" stroke="#222222" stroke-width="0.4"><title>frame 151 | camera_map | 0.072 ms</title></rect>
+<rect x="629.22" y="302" width="63.27" height="30" rx="3" fill="#59a14f" stroke="#222222" stroke-width="0.4"><title>frame 151 | preprocess | 7.914 ms</title></rect>
+<text x="660.85" y="295" text-anchor="middle" font-family="monospace" font-size="13" fill="#222222">F151 7.91 ms</text>
+<rect x="697.82" y="370" width="261.11" height="30" rx="3" fill="#e15759" stroke="#222222" stroke-width="0.4"><title>frame 151 | dpu | 32.661 ms</title></rect>
+<text x="828.38" y="363" text-anchor="middle" font-family="monospace" font-size="13" fill="#222222">F151 32.66 ms</text>
+<rect x="958.94" y="438" width="2.37" height="30" rx="3" fill="#f28e2b" stroke="#222222" stroke-width="0.4"><title>frame 151 | postprocess | 0.296 ms</title></rect>
+<rect x="961.31" y="506" width="1.00" height="30" rx="3" fill="#b07aa1" stroke="#222222" stroke-width="0.4"><title>frame 151 | rpmsg | 0.080 ms</title></rect>
+<rect x="697.88" y="98" width="196.13" height="30" rx="3" fill="#2f5597" stroke="#222222" stroke-width="0.4"><title>frame 152 | camera_isp_buffer_wait | 24.533 ms</title></rect>
+<text x="795.94" y="91" text-anchor="middle" font-family="monospace" font-size="13" fill="#222222">F152 24.53 ms</text>
+<rect x="894.01" y="166" width="1.00" height="30" rx="3" fill="#76b7b2" stroke="#222222" stroke-width="0.4"><title>frame 152 | camera_dequeue | 0.023 ms</title></rect>
+<rect x="894.22" y="234" width="1.00" height="30" rx="3" fill="#9c755f" stroke="#222222" stroke-width="0.4"><title>frame 152 | camera_map | 0.071 ms</title></rect>
+<rect x="895.52" y="302" width="63.40" height="30" rx="3" fill="#59a14f" stroke="#222222" stroke-width="0.4"><title>frame 152 | preprocess | 7.930 ms</title></rect>
+<text x="927.22" y="295" text-anchor="middle" font-family="monospace" font-size="13" fill="#222222">F152 7.93 ms</text>
+<rect x="963.74" y="370" width="264.39" height="30" rx="3" fill="#e15759" stroke="#222222" stroke-width="0.4"><title>frame 152 | dpu | 33.072 ms</title></rect>
+<text x="1095.94" y="363" text-anchor="middle" font-family="monospace" font-size="13" fill="#222222">F152 33.07 ms</text>
+<rect x="1228.14" y="438" width="2.36" height="30" rx="3" fill="#f28e2b" stroke="#222222" stroke-width="0.4"><title>frame 152 | postprocess | 0.295 ms</title></rect>
+<rect x="1230.51" y="506" width="1.00" height="30" rx="3" fill="#b07aa1" stroke="#222222" stroke-width="0.4"><title>frame 152 | rpmsg | 0.084 ms</title></rect>
+<rect x="964.30" y="98" width="198.98" height="30" rx="3" fill="#2f5597" stroke="#222222" stroke-width="0.4"><title>frame 153 | camera_isp_buffer_wait | 24.890 ms</title></rect>
+<text x="1063.79" y="91" text-anchor="middle" font-family="monospace" font-size="13" fill="#222222">F153 24.89 ms</text>
+<rect x="1163.29" y="166" width="1.00" height="30" rx="3" fill="#76b7b2" stroke="#222222" stroke-width="0.4"><title>frame 153 | camera_dequeue | 0.022 ms</title></rect>
+<rect x="1163.48" y="234" width="1.00" height="30" rx="3" fill="#9c755f" stroke="#222222" stroke-width="0.4"><title>frame 153 | camera_map | 0.069 ms</title></rect>
+<rect x="1164.38" y="302" width="63.74" height="30" rx="3" fill="#59a14f" stroke="#222222" stroke-width="0.4"><title>frame 153 | preprocess | 7.973 ms</title></rect>
+<text x="1196.25" y="295" text-anchor="middle" font-family="monospace" font-size="13" fill="#222222">F153 7.97 ms</text>
+<rect x="1232.99" y="370" width="261.52" height="30" rx="3" fill="#e15759" stroke="#222222" stroke-width="0.4"><title>frame 153 | dpu | 32.712 ms</title></rect>
+<text x="1363.75" y="363" text-anchor="middle" font-family="monospace" font-size="13" fill="#222222">F153 32.71 ms</text>
+<rect x="1494.50" y="438" width="3.28" height="30" rx="3" fill="#f28e2b" stroke="#222222" stroke-width="0.4"><title>frame 153 | postprocess | 0.410 ms</title></rect>
+<rect x="1497.79" y="506" width="1.00" height="30" rx="3" fill="#b07aa1" stroke="#222222" stroke-width="0.4"><title>frame 153 | rpmsg | 0.068 ms</title></rect>
+<rect x="1230.72" y="98" width="198.04" height="30" rx="3" fill="#2f5597" stroke="#222222" stroke-width="0.4"><title>frame 154 | camera_isp_buffer_wait | 24.772 ms</title></rect>
+<text x="1329.74" y="91" text-anchor="middle" font-family="monospace" font-size="13" fill="#222222">F154 24.77 ms</text>
+<rect x="1428.77" y="166" width="1.00" height="30" rx="3" fill="#76b7b2" stroke="#222222" stroke-width="0.4"><title>frame 154 | camera_dequeue | 0.025 ms</title></rect>
+<rect x="1429.00" y="234" width="1.00" height="30" rx="3" fill="#9c755f" stroke="#222222" stroke-width="0.4"><title>frame 154 | camera_map | 0.063 ms</title></rect>
+<rect x="1430.64" y="302" width="63.84" height="30" rx="3" fill="#59a14f" stroke="#222222" stroke-width="0.4"><title>frame 154 | preprocess | 7.986 ms</title></rect>
+<text x="1462.56" y="295" text-anchor="middle" font-family="monospace" font-size="13" fill="#222222">F154 7.99 ms</text>
+<rect x="1500.64" y="370" width="64.36" height="30" rx="3" fill="#e15759" stroke="#222222" stroke-width="0.4"><title>frame 154 | dpu | 32.364 ms</title></rect>
+<text x="1532.82" y="363" text-anchor="middle" font-family="monospace" font-size="13" fill="#222222">F154 32.36 ms</text>
+<rect x="1497.16" y="98" width="67.84" height="30" rx="3" fill="#2f5597" stroke="#222222" stroke-width="0.4"><title>frame 155 | camera_isp_buffer_wait | 24.525 ms</title></rect>
+<text x="1531.08" y="91" text-anchor="middle" font-family="monospace" font-size="13" fill="#222222">F155 24.52 ms</text>
+<rect x="24.0" y="596" width="16" height="16" fill="#2f5597" stroke="#222222" stroke-width="0.4"/>
+<text x="47.0" y="609" font-family="monospace" font-size="13">camera_isp_buffer_wait: avg 24.81 ms, p95 26.12 ms</text>
+<rect x="541.3333333333334" y="596" width="16" height="16" fill="#76b7b2" stroke="#222222" stroke-width="0.4"/>
+<text x="564.3333333333334" y="609" font-family="monospace" font-size="13">camera_dequeue: avg 0.02 ms, p95 0.03 ms</text>
+<rect x="1058.6666666666667" y="596" width="16" height="16" fill="#9c755f" stroke="#222222" stroke-width="0.4"/>
+<text x="1081.6666666666667" y="609" font-family="monospace" font-size="13">camera_map: avg 0.07 ms, p95 0.08 ms</text>
+<rect x="24.0" y="624" width="16" height="16" fill="#59a14f" stroke="#222222" stroke-width="0.4"/>
+<text x="47.0" y="637" font-family="monospace" font-size="13">preprocess: avg 8.02 ms, p95 8.15 ms</text>
+<rect x="541.3333333333334" y="624" width="16" height="16" fill="#e15759" stroke="#222222" stroke-width="0.4"/>
+<text x="564.3333333333334" y="637" font-family="monospace" font-size="13">dpu: avg 32.22 ms, p95 32.85 ms</text>
+<rect x="1058.6666666666667" y="624" width="16" height="16" fill="#f28e2b" stroke="#222222" stroke-width="0.4"/>
+<text x="1081.6666666666667" y="637" font-family="monospace" font-size="13">postprocess: avg 0.73 ms, p95 1.25 ms</text>
+<rect x="24.0" y="652" width="16" height="16" fill="#b07aa1" stroke="#222222" stroke-width="0.4"/>
+<text x="47.0" y="665" font-family="monospace" font-size="13">rpmsg: avg 0.08 ms, p95 0.10 ms</text>
+<rect x="18" y="704" width="1564" height="312" rx="8" fill="#f7f8fa" stroke="#c7ccd1"/>
+<text x="34" y="732" font-family="sans-serif" font-size="18" font-weight="bold">Hardware implementation and measured intervals</text>
+<text x="34" y="757" font-family="sans-serif" font-size="14">Camera HW: IMX219 → MIPI CSI-2 RX → ISP Pipeline → Video Scaler → Frame Buffer Write(DMA) → DDR/V4L2 → GStreamer/appsink → A53</text>
+<text x="34" y="780" font-family="sans-serif" font-size="14">AI path: Mapped NV12 planes → A53 CPU preprocess → PL DPU → A53 postprocess → RPMsg → R5F</text>
+<rect x="34" y="795" width="14" height="14" fill="#2f5597" stroke="#222222" stroke-width="0.4"/>
+<text x="56" y="807" font-family="monospace" font-size="13" font-weight="bold">camera_isp_buffer_wait</text>
+<text x="250" y="807" font-family="sans-serif" font-size="13">Frame-buffer DMA/EOF timestamp → appsink pull start; mostly Linux/GStreamer wait, not ISP execution</text>
+<rect x="34" y="825" width="14" height="14" fill="#76b7b2" stroke="#222222" stroke-width="0.4"/>
+<text x="56" y="837" font-family="monospace" font-size="13" font-weight="bold">camera_dequeue</text>
+<text x="250" y="837" font-family="sans-serif" font-size="13">A53/GStreamer: gst_app_sink_pull_sample() call</text>
+<rect x="34" y="855" width="14" height="14" fill="#9c755f" stroke="#222222" stroke-width="0.4"/>
+<text x="56" y="867" font-family="monospace" font-size="13" font-weight="bold">camera_map</text>
+<text x="250" y="867" font-family="sans-serif" font-size="13">A53/GStreamer: map DMA-backed GstVideoFrame planes; no frame copy</text>
+<rect x="34" y="885" width="14" height="14" fill="#59a14f" stroke="#222222" stroke-width="0.4"/>
+<text x="56" y="897" font-family="monospace" font-size="13" font-weight="bold">preprocess</text>
+<text x="250" y="897" font-family="sans-serif" font-size="13">A53 CPU: NV12 → 640x360 int8; launcher sets R5CD_CPU_PREPROCESS=1</text>
+<rect x="34" y="915" width="14" height="14" fill="#e15759" stroke="#222222" stroke-width="0.4"/>
+<text x="56" y="927" font-family="monospace" font-size="13" font-weight="bold">dpu</text>
+<text x="250" y="927" font-family="sans-serif" font-size="13">PL DPU/VART: execute_async submission → completion observed by wait; upper bound including host observation delay</text>
+<rect x="34" y="945" width="14" height="14" fill="#f28e2b" stroke="#222222" stroke-width="0.4"/>
+<text x="56" y="957" font-family="monospace" font-size="13" font-weight="bold">postprocess</text>
+<text x="250" y="957" font-family="sans-serif" font-size="13">A53 CPU: decode/filter DPU output and update overlay state</text>
+<rect x="34" y="975" width="14" height="14" fill="#b07aa1" stroke="#222222" stroke-width="0.4"/>
+<text x="56" y="987" font-family="monospace" font-size="13" font-weight="bold">rpmsg</text>
+<text x="250" y="987" font-family="sans-serif" font-size="13">A53 Linux: write heartbeat + vision result to RPMsg; R5F handling excluded</text>
+</svg>

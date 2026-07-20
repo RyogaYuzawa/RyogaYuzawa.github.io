@@ -132,6 +132,10 @@ Removing Docker does not make the Cortex-A53 workload real-time. It simply provi
 
 ## Integrating FreeRTOS into the Original Pipeline
 
+The integration of FreeRTOS on the Cortex-R5F into the existing Cortex-A53 Ubuntu camera-DPU pipeline is described in the following article:
+
+[Designing a Heterogeneous Multi-Core Camera AI System with Ubuntu on Cortex-A53 and FreeRTOS on Cortex-R5F]({% post_url 2026-07-20-r5f-freertos-a53-ubuntu-camera-dpu-integration %})
+
 ## RPMsg Communication
 
 OpenAMP/RPMsg provides the control and telemetry channel between the A53 and R5F. Large image frames should stay in the PL/DDR video path; RPMsg is used for small messages rather than bulk video transfer.
@@ -176,3 +180,11 @@ The following timeline shows the execution profile of the hardware ISP pipeline 
 Each hardware-IP interval is measured up to the point at which software observes interrupt completion. Consequently, the measured durations include waiting time inside the Vitis AI Library and should not be interpreted as the pure execution time of the accelerator alone.
 
 **This profile indicates clear opportunities to optimize the original SmartCam design.** The observed ISP and DPU paths occupy relatively long intervals, while redundant buffer copies introduce additional avoidable overhead. The DPU interval also includes non-maximum suppression (NMS) performed on the software side by the Vitis AI Library, so it represents more than DPU execution alone. This preliminary figure will be replaced with updated measurements that separate accelerator execution, library wait time, memory copies, and software post-processing more clearly.
+
+### Zero-Copy Optimization
+
+To remove the redundant `camera_copy` stage, the optimized pipeline maps the DMA-backed NV12 frame in place. The ISP and frame-buffer hardware write the captured frame into DDR, and the A53 preprocessing stage directly reads the mapped image planes instead of first copying the complete frame into a separate CPU buffer.
+
+![Thread Monitor timeline after removing the redundant camera-frame copy](/assets/media/posts/zynq-mpsoc-camera-isp-dpu-pipeline/images/pipeline-20260720-093045_timeline_zoom.svg)
+
+The full-frame `camera_copy`, which previously took approximately 2.2 ms, is replaced by a `camera_map` operation of approximately 0.06–0.07 ms. This makes the camera-to-preprocessing handoff zero-copy; preprocessing still generates the model input buffer required by the DPU.

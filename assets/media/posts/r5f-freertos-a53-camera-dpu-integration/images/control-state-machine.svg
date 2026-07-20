@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="550" viewBox="0 0 1400 550" role="img" aria-labelledby="title desc">
+  <title id="title">R5F freshness control state machine</title>
+  <desc id="desc">The control policy transitions among INIT, FRESH, HOLD, and FAILSAFE according to heartbeat and inference-result freshness.</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+  <rect width="1400" height="550" rx="28" fill="#f8fafc"/>
+  <g font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+    <g transform="translate(0 -110)">
+    <circle cx="135" cy="340" r="14" fill="#334155"/>
+    <path d="M 149 340 H 258" fill="none" stroke="#64748b" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 258 334 L 270 340 L 258 346 Z" fill="#64748b"/>
+    <g filter="url(#shadow)"><rect x="270" y="280" width="220" height="120" rx="24" fill="#ffffff" stroke="#94a3b8" stroke-width="2"/></g>
+    <text x="380" y="332" text-anchor="middle" fill="#0f172a" font-size="25" font-weight="800">INIT</text>
+    <text x="380" y="364" text-anchor="middle" fill="#64748b" font-size="15" font-weight="600">Waiting for valid input</text>
+    <g filter="url(#shadow)"><rect x="590" y="160" width="220" height="120" rx="24" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/></g>
+    <text x="700" y="212" text-anchor="middle" fill="#047857" font-size="25" font-weight="800">FRESH</text>
+    <text x="700" y="244" text-anchor="middle" fill="#64748b" font-size="15" font-weight="600">Apply latest result</text>
+    <g filter="url(#shadow)"><rect x="590" y="420" width="220" height="120" rx="24" fill="#fffbeb" stroke="#f59e0b" stroke-width="2"/></g>
+    <text x="700" y="472" text-anchor="middle" fill="#b45309" font-size="25" font-weight="800">HOLD</text>
+    <text x="700" y="504" text-anchor="middle" fill="#64748b" font-size="15" font-weight="600">Retain safe bounded state</text>
+    <g filter="url(#shadow)"><rect x="1010" y="280" width="240" height="120" rx="24" fill="#fef2f2" stroke="#ef4444" stroke-width="2"/></g>
+    <text x="1130" y="332" text-anchor="middle" fill="#b91c1c" font-size="25" font-weight="800">FAILSAFE</text>
+    <text x="1130" y="364" text-anchor="middle" fill="#64748b" font-size="15" font-weight="600">Apply deterministic safe output</text>
+    <g fill="none" stroke-width="4" stroke-linecap="round">
+      <path d="M 490 314 C 530 260, 545 220, 578 220" stroke="#10b981"/>
+      <path d="M 700 280 V 408" stroke="#f59e0b"/>
+      <path d="M 590 460 C 520 430, 520 275, 578 238" stroke="#10b981"/>
+      <path d="M 810 480 C 910 480, 925 360, 998 360" stroke="#ef4444"/>
+      <path d="M 380 400 V 580 Q 380 620, 420 620 H 1030 Q 1070 620, 1070 580 V 412" stroke="#ef4444"/>
+    </g>
+    <g stroke="none">
+      <path d="M 578 214 L 590 220 L 578 226 Z" fill="#10b981"/>
+      <path d="M 694 408 L 700 420 L 706 408 Z" fill="#f59e0b"/>
+      <path d="M 578 232 L 590 238 L 578 244 Z" fill="#10b981"/>
+      <path d="M 998 354 L 1010 360 L 998 366 Z" fill="#ef4444"/>
+      <path d="M 1064 412 L 1070 400 L 1076 412 Z" fill="#ef4444"/>
+    </g>
+    <g font-size="14" font-weight="700" text-anchor="middle">
+      <rect x="355" y="140" width="215" height="34" rx="12" fill="#f8fafc"/>
+      <text x="462.5" y="162" fill="#047857">valid heartbeat + result</text>
+      <rect x="712" y="320" width="242" height="34" rx="12" fill="#f8fafc"/>
+      <text x="833" y="342" fill="#b45309">expired result or late inference</text>
+      <rect x="330" y="460" width="190" height="34" rx="12" fill="#f8fafc"/>
+      <text x="425" y="482" fill="#047857">fresh input resumes</text>
+      <rect x="830" y="292" width="150" height="34" rx="12" fill="#f8fafc"/>
+      <text x="905" y="314" fill="#b91c1c">long timeout</text>
+      <rect x="620" y="568" width="180" height="34" rx="12" fill="#f8fafc"/>
+      <text x="710" y="590" fill="#b91c1c">startup timeout</text>
+    </g>
+    </g>
+  </g>
+</svg>
