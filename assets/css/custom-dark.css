@@ -1102,8 +1102,14 @@ pre,
 }
 
 .post-content p,
-.post-content li {
-    overflow-wrap: anywhere;
+.post-content li,
+.post-content blockquote,
+.post-content figcaption {
+    white-space: normal;
+    text-wrap: wrap;
+    overflow-wrap: break-word;
+    word-break: normal;
+    hyphens: none;
 }
 
 .post-content p,
