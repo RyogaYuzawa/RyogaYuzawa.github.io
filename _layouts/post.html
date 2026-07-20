@@ -14,6 +14,14 @@ layout: default
             {{ page.date | date: date_format }}
           </time>
         </span>
+        {%- if page.last_updated -%}
+          <span class="post-updated">
+            Final update:
+            <time class="dt-updated" datetime="{{ page.last_updated | date_to_xmlschema }}" itemprop="dateModified">
+              {{ page.last_updated | date: date_format }}
+            </time>
+          </span>
+        {%- endif -%}
         {%- if page.author -%}
           <span class="post-author" itemprop="author" itemscope itemtype="http://schema.org/Person">
             <span class="p-author h-card" itemprop="name">{{ page.author }}</span>

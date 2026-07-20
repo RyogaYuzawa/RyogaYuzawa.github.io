@@ -2,6 +2,7 @@
 layout: post
 title: Building a Camera ISP-DPU IP Pipeline from Scratch with AMD FPGA
 date: 2026-07-13
+last_updated: 2026-07-20
 author: Ryoga Yuzawa
 categories: [FPGA, Zynq MPSoC, Camera, AI]
 tags: [Zynq MPSoC, FPGA, IMX219, Camera, ISP, DPU, Vitis AI, Vivado, Ubuntu, Rootfs, R5F, RPMsg]
@@ -165,3 +166,13 @@ The R5F will supervise these deadlines and maintain counters for late, missing, 
 This architecture can provide deterministic monitoring and response, but it does not automatically make Linux inference deterministic. A real-time claim will only be made after worst-case execution time, contention, and fault-recovery behavior have been measured under representative load.
 
 ## Result
+
+### Profiling with Thread Monitor
+
+The following timeline shows the execution profile of the hardware ISP pipeline and DPU in the original SmartCam design.
+
+![Thread Monitor timeline of the original SmartCam hardware ISP pipeline and DPU execution](/assets/media/posts/zynq-mpsoc-camera-isp-dpu-pipeline/images/pipeline-20260720-084627_timeline_zoom.svg)
+
+Each hardware-IP interval is measured up to the point at which software observes interrupt completion. Consequently, the measured durations include waiting time inside the Vitis AI Library and should not be interpreted as the pure execution time of the accelerator alone.
+
+**This profile indicates clear opportunities to optimize the original SmartCam design.** The observed ISP and DPU paths occupy relatively long intervals, while redundant buffer copies introduce additional avoidable overhead. The DPU interval also includes non-maximum suppression (NMS) performed on the software side by the Vitis AI Library, so it represents more than DPU execution alone. This preliminary figure will be replaced with updated measurements that separate accelerator execution, library wait time, memory copies, and software post-processing more clearly.

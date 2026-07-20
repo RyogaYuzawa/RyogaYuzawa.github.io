@@ -301,6 +301,7 @@ a:hover {
 }
 
 .post-date,
+.post-updated,
 .post-author {
     display: inline-flex;
     align-items: center;
@@ -309,6 +310,7 @@ a:hover {
 }
 
 .post-date::before,
+.post-updated::before,
 .post-author::before {
     content: "";
     width: 6px;
@@ -651,6 +653,7 @@ table {
     }
 
     .post-date,
+    .post-updated,
     .post-author {
         gap: 6px;
     }

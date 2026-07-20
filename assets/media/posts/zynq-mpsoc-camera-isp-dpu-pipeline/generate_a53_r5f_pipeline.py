@@ -73,9 +73,9 @@ def build_svg() -> str:
     <path d="M 1031 638 L 1040 650 L 1049 638 Z" stroke="none"/>
   </g>
 
-  <rect x="520" y="338" width="260" height="104" rx="18" fill="#ffffff" stroke="#94a3b8"/>
-  <text x="650" y="378" fill="#0f172a" font-family="Inter, ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="17" font-weight="700" text-anchor="middle">Vision Result</text>
-  <text x="650" y="413" fill="#475569" font-family="Inter, ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="16" font-weight="700" text-anchor="middle">OpenAMP / RPMsg</text>
+  <rect x="547" y="335" width="206" height="64" rx="18" fill="#ffffff" stroke="#94a3b8"/>
+  <text x="650" y="361" fill="#0f172a" font-family="Inter, ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" text-anchor="middle">Vision Result</text>
+  <text x="650" y="385" fill="#475569" font-family="Inter, ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" text-anchor="middle">OpenAMP / RPMsg</text>
 
   <g fill="#0f9f8f" stroke="#0f9f8f" stroke-width="4" stroke-linecap="round">
     <path d="M 1210 554 H 1226 V 276" fill="none"/>
