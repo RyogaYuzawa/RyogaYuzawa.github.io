@@ -11,7 +11,7 @@ simple_page_title: true
   <div class="about-profile-name">
     <img class="about-profile-image" src="/assets/media/about/yuzawa-profile.jpeg" alt="Ryoga Yuzawa">
     <strong>Ryoga Yuzawa / 湯澤 凌芽</strong>
-    <p class="about-profile-summary">AI / ML engineer focused on computer vision and embedded AI for camera systems, with experience in resource-constrained model deployment, DNN design including quantization and layer conversion, power-aware HW-SW co-optimization, and profiling/debugging using GPIO instrumentation and oscilloscopes. After working on interface and circuit design, I moved into developing AI-based autofocus features for the Sony Alpha series. Since 2025, I have been conducting research in computer vision and edge AI at UC Berkeley through Sony's overseas study program.</p>
+    <p class="about-profile-summary">AI / ML engineer focused on computer vision and embedded AI for camera systems, with experience in resource-constrained model deployment, DNN design including quantization and layer conversion, power-aware HW-SW co-optimization, and profiling/debugging using GPIO instrumentation and oscilloscopes. After working on interface and circuit design, I moved into developing AI-based autofocus features for the Sony Alpha series. Previously, from 2025 to 2026, I conducted research in computer vision and edge AI at UC Berkeley through Sony's overseas study program.</p>
   </div>
 </div>
 
@@ -25,7 +25,7 @@ simple_page_title: true
     </div>
     <div class="about-timeline-detail">
       <div class="about-timeline-role">Visiting Researcher &mdash; Mechanical Systems Control Lab (Berkeley AI Research)</div>
-      <span class="about-timeline-period">Aug. 2025 - Present</span>
+      <span class="about-timeline-period">Aug. 2025 - Aug. 2026</span>
     </div>
   </div>
   <div class="about-timeline-item">
@@ -34,8 +34,8 @@ simple_page_title: true
       <span class="about-timeline-location">Tokyo, Japan</span>
     </div>
     <div class="about-timeline-detail">
-      <div class="about-timeline-role">AI / ML Engineer &mdash; Camera Embedded AI</div>
-      <span class="about-timeline-period">Apr. 2023 - Aug. 2025</span>
+      <div class="about-timeline-role">Sr. AI/ML Engineer &mdash; Camera Embedded AI</div>
+      <span class="about-timeline-period">Apr. 2023 - Present</span>
     </div>
   </div>
   <div class="about-timeline-item">
